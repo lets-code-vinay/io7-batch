@@ -1,0 +1,72 @@
+1. Portfolio example :-> https://rahul-nayak-portfolio.netlify.app/
+2. Website parts
+    1. Header
+    2 Footer
+    3. Sitemap
+    4. Sidebar
+    5. Icons
+    6. Buttons
+    7. Avatar
+    8. Card
+    9. Breadcrumb
+    10. Form (Input box, Checkbox, Radio)
+    11. Drop downs (Select)
+3. Web Page design
+   1. HTML - Skeleton
+   2. CSS  - Beautification 
+   3. JS -   Brain, Movement
+
+4. HTML ---
+   Hyper text markup language
+   HTML4, HTML5 (Current use)
+
+5. Tag, attributes, properties, elements
+6. Tags --> Anything opening and closing with <> 
+            <a>, <b>
+            1. Opening and closing Tags <a> </a>, <p> </p>
+            2. Self closing tags <img /> , <input />
+7. Elements - anything used inside the tags is known as Elements
+            1. <a>Link </a>
+            2. <img src="" />
+8. Attributes: Properties of tags
+            1. <a> - href, target
+                <a href='google.com' target='_blank'>Link</a>
+            2. <img />  src, width, alt
+              < img src='image path' alt='image alternate text' width='50px'/>
+9. Properties : used in CSS
+
+
+10. HTML STructure or Hierarchy
+  <!Doctype html >
+  <html>
+    <head>
+        <meta>
+        <link>
+        <script>
+
+    <body>
+        <main>
+        <section>
+        <div>
+            <p>
+                <a>
+        <list>
+
+11. Extensions - file Extensions
+        .txt  -- Text file
+        .c    -- c file
+        .js   -- javascript
+        .jsx  -- Javascript react
+        .html, .htm  -- HTML file
+        .css   -- Stylesheet
+        .py    -- python
+        .pdf   -- pdf file
+        .doc   -- document
+
+12. Writing standard- cases
+     snake case == snake_case -- this_is_snake_case, THIS_IS_SNAKE_CASE (backend)
+     kebab case == kebab-case --  this-is-kebab-case, (CSS)
+     camel case == camelCase  -- thisIsCamelCase (JS)
+     Pascal Case == PascalCase -- ThisIsPascalCase (React)
+
+

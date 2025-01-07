@@ -1,0 +1,94 @@
+About Keyboard
+
+26 - Alphabets
+10 - num pad
+10 - upper num pad with spcl character
+12 - functions keys
+2 Shift keys
+2 control keys
+2 alt keys
+1 space bar
+other keys (navigation keys)
+
+----------------------------------
+special characters
+~   --> Tilde
+`   --> Backtick
+!   --> Exclamation, Not 
+@   --> At the rate, address of
+#   --> Hash, Hex
+$  -->  Dollar
+%  -->  Percentage, Modulus
+^  -->  Caret
+&  -->  Ampersand
+*  -->  Asterisk, Star, multiplication
+()  -->  Parenthesis
+(   -->  Parenthesis open, round brackets open
+)   -->  Parenthesis close, round brackets close 
+{}  -->  Curly Braces
+{  -->  Curly Braces open
+}  -->  Curly Braces close
+[] -->  Square Braces
+[  -->  Square Braces open
+]  -->  Square Braces close
+<> -->  Angular braces
+<  -->  Angular braces open, less than
+>  -->  Angular braces close, greater than
+-  -->  Hyphen
+_  -->  underscore
+=  -->  Assign operator
+== -->  Equal to (Value, not Datatype )
+=== --> Equal To (Value and datatype)
+|   --> Pipe
+||  --> OR operator
+&&  --> And, Logical And
+:   --> Colon
+;   --> Semi Colon
+''  --> Inverted Commas, Single Quotes
+""  --> Double Quotes
+\   --> Forward Slash
+/   --> Backward Slash
+,   --> Comma
+.   --> Dot, Full stop, Decimal
+?   --> Question mark
+?.  --> Optional Chaining
+??  --> Nullish Coelscent
+=>  --> Arrow Function 
+... --> Rest Operator, Spread Operator
+-------------------------------------------------
+
+
+IDE 
+Integrated Development Environment
+Is a software Where we do coding
+
+1. Online IDE(Compiler)
+    a. ReptIt
+    b. Codesandbox
+    c. codepen
+    d. JSbin
+    e. JSFiddle
+    f. Programiz
+2. Offline IDE
+    Notepad ++
+    VS code
+    Sublime 
+    Eclipse
+    Atom
+    bracket
+    PyCharm
+    CodeBlock
+
+------------------------------------
+Install VS Code
+---------------------------------------
+1. Install important Extensions
+   a. Prettier
+        a. Go To setting Icon
+        b. Go to Setting Text
+        c. Search - form
+        d. Select Default Formatter (Prettier)
+        e. Check Format on save
+
+   b. CodeSpellChecker
+   c. LiveServer
