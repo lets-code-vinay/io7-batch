@@ -1,0 +1,12 @@
+Make a page where 4 menus in heading
+Logo
+Home
+School
+College
+Job
+Hobbies
+
+
+create all 5 pages with brief description and photo
+
+navigation must be working

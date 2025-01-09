@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Doraemon-family</title>
+  </head>
+  <body>
+    <!--
+        Normal
+        Semantic tags -- Self explanatory 
+            main
+            article
+            strong
+            section
+            header
+            footer
+            aside
+            audio
+            video
+            figure/figcaption
+    -->
+    <main>
+      <header style="background-color: red">
+        <a href="#"
+          ><img
+            src="../00 images/icons/book-logo.png"
+            alt="book-logo"
+            width="40"
+        /></a>
+        <a href="#" style="text-decoration: none; color: white">Home</a>
+        <a href="./dora.html" style="text-decoration: none; color: white"
+          >Doreamon</a
+        >
+        <a
+          href="./nobita.html"
+          style="text-decoration: none; color: white; width: 100px"
+          >Nobita</a
+        >
+        <a href="./Shizuka.html" style="text-decoration: none; color: white"
+          >Shizuka</a
+        >
+      </header>
+
+      <section>
+        <h1>Dora page</h1>
+
+        <img
+          src="../00 images/images/Doraemon_characters.webp"
+          alt="dora1"
+          width="700"
+          height="300"
+        />
+
+        <figure>
+          <img
+            src="../00 images/images/dora-family.jpg"
+            alt="dora2"
+            width="700"
+          />
+          <figcaption style="color: red">
+            <h1>The Doreamon Family</h1>
+          </figcaption>
+        </figure>
+      </section>
+
+      <section>
+        <!--
+          3 types of list
+          1. Ordered list 
+              1.  a. 
+              2.  b.
+          2. unordered list
+              *
+              *
+              *
+          3. Description list
+
+        -->
+
+        <!--Without type: default OL-->
+        <ol>
+          <li>Doreamon</li>
+          <li>Meechan</li>
+          <li>Nobita</li>
+          <li>Shizuka</li>
+        </ol>
+
+        <!--type 1:  listing with numeric values-->
+        <ol type="1" style="color: aqua">
+          <li>Doreamon</li>
+          <li style="color: red">Meechan</li>
+          <li>Nobita</li>
+          <li>Shizuka</li>
+        </ol>
+
+        <!--type A:  listing with Capital alphabets-->
+        <ol type="A" style="color: blue">
+          <li>Doreamon</li>
+          <li style="color: red">Meechan</li>
+          <li>Nobita</li>
+          <li>Shizuka</li>
+        </ol>
+
+        <!--type a:  listing with small alphabets -->
+        <ol type="a" style="color: brown">
+          <li>Doreamon</li>
+          <li style="color: red">Meechan</li>
+          <li>Nobita</li>
+          <li>Shizuka</li>
+        </ol>
+
+        <!--type i:  listing with small roman counting -->
+        <ol type="i" style="color: pink">
+          <li>Doreamon</li>
+          <li style="color: red">Meechan</li>
+          <li>Nobita</li>
+          <li>Shizuka</li>
+        </ol>
+
+        <!--type I:  listing with capital roman counting -->
+        <ol type="I" style="color: red">
+          <li>Doreamon</li>
+          <li style="color: red">Meechan</li>
+          <li>Nobita</li>
+          <li>Shizuka</li>
+        </ol>
+
+        <!--Unordered list-->
+        <!--default:  listing with black bullets -->
+        <ul>
+          <li>Doreamon</li>
+          <li style="color: red">Meechan</li>
+          <li>Nobita</li>
+          <li>Shizuka</li>
+        </ul>
+
+        <!--type-disc:  listing with black solid bullets -->
+        <ul type="disc" style="color: green">
+          <li>Doreamon</li>
+          <li style="color: red">Meechan</li>
+          <li>Nobita</li>
+          <li>Shizuka</li>
+        </ul>
+
+        <!--type: circle:  listing with black hollow bullets -->
+        <ul type="circle" style="color: magenta">
+          <li>Doreamon</li>
+          <li style="color: red">Meechan</li>
+          <li>Nobita</li>
+          <li>Shizuka</li>
+        </ul>
+
+        <!--type: square:  listing with solid squares -->
+        <ul type="square" style="color: hotpink">
+          <li>Doreamon</li>
+          <li style="color: red">Meechan</li>
+          <li>Nobita</li>
+          <li>Shizuka</li>
+        </ul>
+
+        <!--type: none:  listing without bullets -->
+        <ul type="none" style="color: teal">
+          <li>Doreamon</li>
+          <li style="color: red">Meechan</li>
+          <li>Nobita</li>
+          <li>Shizuka</li>
+        </ul>
+
+        <!-- nested listing-->
+        <ul>
+          Doreamon Family
+          <li>
+            Nobita
+            <ol>
+              <li>
+                Nobita Nobi
+                <ul type="sqaure">
+                  <li>Shizuka Minamoto</li>
+                  <li style="color: red">Nobisuke Nobi Jr</li>
+                </ul>
+              </li>
+              <li>Tamako Nobi</li>
+              <li>Nobisuke Nobi</li>
+            </ol>
+          </li>
+          <li>
+            Doreamon
+            <ol type="A">
+              <li>Doreamon</li>
+              <li>Meechan</li>
+            </ol>
+          </li>
+          <li>
+            Shizuka
+            <ol type="i">
+              <li>Shizuka Minamoto</li>
+              <li>Yoshio Minamoto</li>
+              <li>Michiko Minamoto</li>
+              <li>Kazu</li>
+            </ol>
+          </li>
+          <li>Sunio</li>
+          <li>Gian</li>
+          <li>Digisuki</li>
+        </ul>
+      </section>
+    </main>
+  </body>
+</html>
