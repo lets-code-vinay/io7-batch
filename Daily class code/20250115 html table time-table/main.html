@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Time-table</title>
+    <style>
+      table {
+        width: 100%;
+        border-left: 5px solid black;
+      }
+      table,
+      tr,
+      th {
+        border-left: 1px solid black;
+        border-right: 1px solid black;
+
+        border-collapse: collapse;
+      }
+      td {
+        border: 1px solid black;
+        text-align: center;
+      }
+      .border-bottom-none {
+        border-bottom: none !important;
+        border-top: 1px solid black;
+      }
+      .border-top-none {
+        border-top: none !important;
+        border-bottom: 1px solid black;
+      }
+      .border-all {
+        border: 1px solid black;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Chandni's School Time Table</h1>
+
+    <table>
+      <thead>
+        <tr>
+          <th class="border-bottom-none"></th>
+          <th class="border-bottom-none">I</th>
+          <th class="border-bottom-none">II</th>
+          <th class="border-bottom-none">III</th>
+          <th class="border-all" rowspan="2">12.00 - 12.40</th>
+          <th class="border-bottom-none">IV</th>
+          <th class="border-bottom-none">V</th>
+          <th class="border-bottom-none">VI</th>
+          <th class="border-bottom-none">VII</th>
+        </tr>
+        <tr>
+          <th class="border-top-none">Day/Period</th>
+          <th class="border-top-none">9.30 - 10.20</th>
+          <th class="border-top-none">10.20 - 11.10</th>
+          <th class="border-top-none">11.10 - 12.00</th>
+          <th class="border-top-none">12.40 - 1.30</th>
+          <th class="border-top-none">1.30 - 2.20</th>
+          <th class="border-top-none">2.20 - 3.10</th>
+          <th class="border-top-none">3.10 - 4.00</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <tr>
+          <td><strong>Monday</strong></td>
+          <td>Eng</td>
+          <td>Math</td>
+          <td>Chem</td>
+          <td rowspan="6">Lunch</td>
+          <td colspan="3">Lab</td>
+          <td>Phy</td>
+        </tr>
+
+        <tr>
+          <td><strong>Tuesday</strong></td>
+          <td colspan="3">Lab</td>
+          <td>Eng</td>
+          <td>Chem</td>
+          <td>Math</td>
+          <td>Sports</td>
+        </tr>
+        <tr>
+          <td><strong>Wednesday</strong></td>
+          <td>Math</td>
+          <td>Phy</td>
+          <td>Eng</td>
+          <td>Chem</td>
+          <td colspan="3">Lib</td>
+        </tr>
+
+        <tr>
+          <td><strong>Thursday</strong></td>
+          <td>Phy</td>
+          <td>Eng</td>
+          <td>Chem</td>
+          <td colspan="3">Lab</td>
+          <td>Math</td>
+        </tr>
+
+        <tr>
+          <td><strong>Friday</strong></td>
+          <td colspan="3">Lab</td>
+          <td>Math</td>
+          <td>Chem</td>
+          <td>Eng</td>
+          <td>Phy</td>
+        </tr>
+
+        <tr>
+          <td><strong>Saturday</strong></td>
+          <td>Eng</td>
+          <td>Chem</td>
+          <td>Math</td>
+          <td colspan="3">Seminar</td>
+          <td>Sports</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <hr />
+    <hr />
+    <table>
+      <thead>
+        <tr>
+          <th class="border-bottom-none"></th>
+          <th class="border-bottom-none">I</th>
+          <th class="border-bottom-none">II</th>
+          <th class="border-bottom-none">III</th>
+          <th class="border-all" rowspan="2">12.00 - 12.40</th>
+          <th class="border-bottom-none">IV</th>
+          <th class="border-bottom-none">V</th>
+          <th class="border-bottom-none">VI</th>
+          <th class="border-bottom-none">VII</th>
+        </tr>
+        <tr>
+          <th class="border-top-none">Day/Period</th>
+          <th class="border-top-none">9.30 - 10.20</th>
+          <th class="border-top-none">10.20 - 11.10</th>
+          <th class="border-top-none">11.10 - 12.00</th>
+          <th class="border-top-none">12.40 - 1.30</th>
+          <th class="border-top-none">1.30 - 2.20</th>
+          <th class="border-top-none">2.20 - 3.10</th>
+          <th class="border-top-none">3.10 - 4.00</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <tr>
+          <td><strong>Monday</strong></td>
+          <td>Eng</td>
+          <td>Math</td>
+          <td>Chem</td>
+          <td rowspan="6">Lunch</td>
+          <td colspan="3">Lab</td>
+          <td>Phy</td>
+        </tr>
+
+        <tr>
+          <td><strong>Tuesday</strong></td>
+          <td colspan="3">Lab</td>
+          <td>Eng</td>
+          <td>Chem</td>
+          <td>Math</td>
+          <td>Sports</td>
+        </tr>
+        <tr>
+          <td><strong>Wednesday</strong></td>
+          <td>Math</td>
+          <td>Phy</td>
+          <td>Eng</td>
+          <td>Chem</td>
+          <td colspan="3">Lib</td>
+        </tr>
+
+        <tr>
+          <td><strong>Thursday</strong></td>
+          <td>Phy</td>
+          <td>Eng</td>
+          <td>Chem</td>
+          <td colspan="3">Lab</td>
+          <td>Math</td>
+        </tr>
+
+        <tr>
+          <td><strong>Friday</strong></td>
+          <td colspan="3">Lab</td>
+          <td>Math</td>
+          <td>Chem</td>
+          <td>Eng</td>
+          <td>Phy</td>
+        </tr>
+
+        <tr>
+          <td><strong>Saturday</strong></td>
+          <td>Eng</td>
+          <td>Chem</td>
+          <td>Math</td>
+          <td colspan="3">Seminar</td>
+          <td>Sports</td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html>
