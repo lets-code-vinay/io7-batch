@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Border Style</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      .main-container,
+      .main-container2 {
+        margin: auto;
+        width: fit-content;
+      }
+      .main-container h1 {
+        display: inline-block;
+        width: fit-content;
+        border: 2px solid #ffa392;
+        padding: 10px;
+      }
+      .main-container2 h1 {
+        margin-top: 5px;
+        display: inline-block;
+        width: fit-content;
+        border: 2px solid #ffa392;
+        padding: 10px;
+      }
+
+      .b1 {
+        border-top-right-radius: 15px;
+        border-bottom-left-radius: 15px;
+      }
+      .b2 {
+        border-top-left-radius: 15px;
+        border-bottom-right-radius: 15px;
+      }
+      .img-section {
+        width: fit-content;
+        margin: 20px auto;
+      }
+      .img-1 {
+        background-image: url(../0assets/dora-family.jpg);
+        height: 200px;
+        width: 200px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        border: 1px solid black;
+        border-top-right-radius: 200px;
+        border-bottom-left-radius: 200px;
+      }
+
+      /*-------- team member section-start*/
+      .team-members-container {
+        width: 100%;
+        margin: 10px auto;
+      }
+
+      .team-members-container .teams-1,
+      .team-members-container .teams-2,
+      .team-members-container .teams-3 {
+        width: 50%;
+        margin: 5px auto 0;
+      }
+      .team-members-container .teams-1 .team-member-1 {
+        background-image: url(../0assets/guidely-teams/vee-padva.jpg);
+        width: 49%;
+        height: 300px;
+        background-size: cover;
+        display: inline-block;
+      }
+      .team-members-container .teams-1 .team-member-1 h1,
+      .team-members-container .teams-1 .team-member-2 h1,
+      .team-members-container .teams-2 .team-member-1 h1,
+      .team-members-container .teams-2 .team-member-2 h1,
+      .team-members-container .teams-3 .team-member-1 h1,
+      .team-members-container .teams-3 .team-member-2 h1 {
+        margin: 10px auto 0;
+        width: fit-content;
+      }
+      .team-members-container .teams-1 .team-member-1 p,
+      .team-members-container .teams-1 .team-member-2 p,
+      .team-members-container .teams-2 .team-member-1 p,
+      .team-members-container .teams-2 .team-member-2 p,
+      .team-members-container .teams-3 .team-member-1 p,
+      .team-members-container .teams-3 .team-member-2 p {
+        margin: auto;
+        width: fit-content;
+      }
+      .team-members-container .teams-1 .team-member-2 {
+        background-image: url(../0assets/guidely-teams/amir-glogau.jpg);
+        width: 49%;
+        height: 300px;
+        background-size: cover;
+        display: inline-block;
+      }
+
+      .team-members-container .teams-2 .team-member-1 {
+        background-image: url(https://guidely.com/wp-content/uploads/2023/12/team-shannon-woodruff.jpg);
+        width: 49%;
+        height: 300px;
+        background-size: cover;
+        display: inline-block;
+      }
+      .team-members-container .teams-2 .team-member-2 {
+        background-image: url(https://guidely.com/wp-content/uploads/2023/12/team-nate-cooper.jpg);
+        width: 49%;
+        height: 300px;
+        background-size: cover;
+        display: inline-block;
+      }
+
+      .team-members-container .teams-3 .team-member-1 {
+        background-image: url(https://guidely.com/wp-content/uploads/2023/12/team-will-miller.jpg);
+        width: 49%;
+        height: 300px;
+        background-size: cover;
+        display: inline-block;
+      }
+      .team-members-container .teams-3 .team-member-2 {
+        background-image: url(https://guidely.com/wp-content/uploads/2023/12/team-gaya-glogau.jpg);
+        width: 49%;
+        height: 300px;
+        background-size: cover;
+        display: inline-block;
+      }
+
+      .b-t-l {
+        border-top-left-radius: 100px;
+      }
+      .b-t-r {
+        border-top-right-radius: 100px;
+      }
+      .b-b-r {
+        border-bottom-right-radius: 100px;
+      }
+      .b-b-l {
+        border-bottom-left-radius: 100px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main-container">
+      <h1 class="b2">Hello Chandni</h1>
+      <h1 class="b1">Welcome to the class</h1>
+    </div>
+    <div class="main-container2">
+      <h1 class="b1">Hello Chandni</h1>
+      <h1 class="b2">Welcome to the class</h1>
+    </div>
+
+    <div class="img-section">
+      <div class="img-1"></div>
+    </div>
+
+    <div class="team-members-container">
+      <div class="teams-1">
+        <div class="team-member-1 b-t-r b-b-l">
+          <h1>Amir Glagau</h1>
+          <p>Founder & CEO</p>
+        </div>
+        <div class="team-member-2 b-t-l">
+          <h1>Vee Padva</h1>
+          <p>COO & Head of Product</p>
+        </div>
+      </div>
+
+      <div class="teams-2">
+        <div class="team-member-1 b-b-r b-t-l">
+          <h1>Shannon</h1>
+          <p>Client Experience Manager</p>
+        </div>
+        <div class="team-member-2 b-b-l">
+          <h1>Nate Cooper</h1>
+          <p>Lifecycle Marketting</p>
+        </div>
+      </div>
+
+      <div class="teams-3">
+        <div class="team-member-1 b-t-r">
+          <h1>Will Miller</h1>
+          <p>Associate Product</p>
+        </div>
+        <div class="team-member-2 b-t-l b-b-r">
+          <h1>Gaya Glagau</h1>
+          <p>Content Coordinator</p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Units</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      .pixel {
+        height: 300px;
+        width: 300px;
+        background-color: red;
+      }
+
+      .percentage {
+        height: 300px;
+        width: 100%;
+        background-color: blue;
+      }
+
+      .per-child {
+        height: 50%;
+        width: 20%;
+        background-color: rgb(98, 98, 180);
+      }
+      .per-grand-child {
+        height: 50%;
+        width: 20%;
+        background-color: rgb(198, 98, 180);
+      }
+      .viewport-width {
+        height: 200px;
+        width: 20vw;
+        background-color: rgb(198, 98, 180);
+      }
+
+      .viewport-height {
+        width: 200px;
+        height: 100vh;
+        background-color: blueviolet;
+      }
+
+      .vh-child {
+        width: 50%;
+        height: 50%;
+        background-color: rgb(32, 5, 57);
+      }
+    </style>
+  </head>
+  <body>
+    <!--
+    1. px -- pixel
+    2. %  -- percentage
+    3. vw -- viewport Width
+    4. vh -- viewport height
+    5. em -- element
+    6. rem -- root element 
+-->
+
+    <!-- <div class="pixel"></div>
+    <div class="percentage">
+      <div class="per-child">
+        <div class="per-grand-child"></div>
+      </div>
+    </div>
+    <div class="viewport-width"></div> -->
+    <div class="viewport-height">
+      <div class="vh-child"></div>
+    </div>
+  </body>
+</html>
