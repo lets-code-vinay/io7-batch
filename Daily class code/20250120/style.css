@@ -1,0 +1,20 @@
+@import url("https://fonts.googleapis.com/css2?family=Caveat+Brush&family=Matemasie&family=Platypi:ital,wght@0,300..800;1,300..800&family=Playwrite+IN:wght@100..400&display=swap");
+
+.new-font {
+  font-size: 3rem;
+  background-color: red;
+  /* font-family: "Caveat Brush", serif; */
+  /* font-family: "Matemasie", serif; */
+  font-family: "Playwrite IN", serif;
+}
+
+.icon-red {
+  color: white;
+  font-size: 2rem;
+  text-shadow: 0px 0px 3px black;
+}
+
+.icon-blue {
+  color: blue;
+  font-size: 2rem;
+}
