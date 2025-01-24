@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Forms</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      html {
+        font-size: 62.5%;
+      }
+      .main-form-section {
+        background: lavenderblush;
+        width: 50%;
+        margin: 10px auto;
+      }
+      form {
+        padding: 2%;
+      }
+      label {
+        font-size: 2rem;
+        width: 200px;
+        display: inline-block;
+      }
+      .individual-form {
+        margin-top: 20px;
+      }
+      .individual-input {
+        width: 50%;
+        height: 30px;
+      }
+
+      /* To remove arrows from number input*/
+      input[type="number"]::-webkit-outer-spin-button,
+      input[type="number"]::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+      }
+
+      .gender {
+        display: inline-block;
+      }
+      .gender label {
+        width: 100px;
+      }
+
+      .submit-btn {
+        border: 1px solid black;
+      }
+    </style>
+  </head>
+  <body>
+    <!--
+        type --- What kinda input is this
+            text
+                class="individual-input"
+                id="first-name"
+                type="text"
+                placeholder="Please Enter your First Name"
+                maxlength="20"
+                minlength="5"
+                value="Maurya"
+                required
+                disabled
+                readonly
+            number
+                class="individual-input"
+                id="last-name"
+                type="text"
+                placeholder="Please Enter your Last Name"
+                value="45"
+                readonly
+                max -- maximum required number
+                min -- minimum required number
+            email
+            tel
+                pattern -- [0-9] enter number from 0-9
+                            {2}  limit is 2 digit number
+                            -   is used to separate number to make pattern
+                            [0-9]{2}-[0-9]{10}  -- 91-7307805030
+                            [0-9]{3}-[0-9]{3}-[0-9]4 -- 161-41-6565
+            date
+                 class="individual-input"
+                id="dob"
+                type="date"
+                value="2025-01-23"
+                min="2020-01-01"
+                max="2025-12-01"
+                disabled
+                required
+            time
+                class="individual-input"
+                id="bt"
+                type="time"
+                value="15:30"
+                min="08:00"
+                max="18:30"
+                disabled
+                required
+            datetime-local
+                class="individual-input"
+                id="datetime"
+                type="datetime-local"
+                value="2025-01-23T15:30"
+                min="2025-01-15T05:30"
+                max="2025-05-28T20:30"
+                disabled
+                required
+            radio
+                required
+                id="Book-reading" 
+                type="checkbox" 
+                checked 
+                disabled
+            checkbox
+                required
+                id="Book-reading" 
+                type="checkbox" 
+                checked 
+                disabled
+            url
+                disabled
+                required
+                class="individual-input" 
+                id="website" 
+                type="url"
+                minlength
+                maxlength
+            range
+                style="width: 50%"
+                type="range"
+                value="10"
+                min="5"
+                max="80"
+                disabled
+                required
+
+            color
+                id="color"
+                style="width: 50%"
+                type="color"
+                value="#aa00ff"
+            image
+                id="image"
+                style="width: 50%"
+                type="image"
+                src="../00 images/images/dora1.jpg"
+            file
+                 id="file" 
+                 style="width: 50%" 
+                 type="file" 
+                 accept=".pdf" 
+                 disabled
+            
+
+        value -- value of input field
+        id -- id works with label(with for attribute)
+        placeholder -- Indicates user about the input field
+        required -- It makes the input field required to enter any value there
+        disabled -- Disable will disable the input field so user can not enter any value
+        readonly -- User can only read but can not update the input field
+        minlength -- User has to enter minimal length of value
+        maxlength -- User has to enter maximum length of value
+        
+    -->
+    <div class="main-form-section">
+      <form>
+        <fieldset>
+          <legend>User Information</legend>
+          <div class="individual-form">
+            <label for="first-name">First name:</label>
+            <input
+              class="individual-input"
+              id="first-name"
+              type="text"
+              placeholder="Please Enter your First Name"
+              maxlength="20"
+              minlength="5"
+            />
+          </div>
+
+          <div class="individual-form">
+            <label for="last-name">Last name:</label>
+            <input
+              class="individual-input"
+              id="last-name"
+              type="text"
+              placeholder="Please Enter your Last Name"
+              value="Maurya"
+              readonly
+            />
+          </div>
+          <div class="individual-form">
+            <label for="age">Age:</label>
+            <input
+              class="individual-input"
+              id="age"
+              type="number"
+              placeholder="Please enter your Age"
+              max="99"
+              min="18"
+            />
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <legend>Contact Details</legend>
+
+          <div class="individual-form">
+            <label for="email">Email:</label>
+            <input
+              class="individual-input"
+              id="email"
+              type="email"
+              placeholder="Please Enter your Email Address"
+              minlength="3"
+              maxlength="30"
+            />
+          </div>
+
+          <div class="individual-form">
+            <label for="mobile">Mobile:</label>
+            <input
+              class="individual-input"
+              id="mobile"
+              type="tel"
+              placeholder="Please Enter your telephone number"
+              pattern="[0-9]{2}-[0-9]{10}"
+            />
+          </div>
+          <div class="individual-form">
+            <label for="website">Website:</label>
+            <input class="individual-input" id="website" type="url" />
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <legend>Password details</legend>
+          <div class="individual-form">
+            <label for="password">Password:</label>
+            <input
+              class="individual-input"
+              id="password"
+              type="password"
+              placeholder="Please Enter your password"
+            />
+          </div>
+          <div class="individual-form">
+            <label for="confirm-password">Confirm Password:</label>
+            <input
+              class="individual-input"
+              id="confirm-password"
+              type="password"
+              placeholder="Please confirm your password"
+            />
+          </div>
+        </fieldset>
+
+        <div class="individual-form">
+          <label for="dob">Date of Birth:</label>
+          <input
+            class="individual-input"
+            id="dob"
+            type="date"
+            value="2025-01-23"
+            min="2020-01-01"
+            max="2025-12-01"
+          />
+        </div>
+
+        <div class="individual-form">
+          <label for="bt">Birth Time:</label>
+          <input
+            class="individual-input"
+            id="bt"
+            type="time"
+            value="15:30"
+            min="08:00"
+            max="18:30"
+          />
+        </div>
+        <div class="individual-form">
+          <label for="datetime">Date Time:</label>
+          <input
+            class="individual-input"
+            id="datetime"
+            type="datetime-local"
+            value="2025-01-23T15:30"
+            min="2025-01-15T05:30"
+            max="2025-05-28T20:30"
+          />
+        </div>
+
+        <div class="individual-form">
+          <label>Gender:</label>
+          <div class="gender">
+            <input id="male" type="radio" checked disabled />
+            <label for="male">Male</label>
+
+            <input id="female" type="radio" checked />
+            <label for="female">Female</label>
+
+            <input id="trans" type="radio" disabled />
+            <label for="trans">Transgender</label>
+          </div>
+        </div>
+
+        <div class="individual-form">
+          <label>Hobbies:</label>
+
+          <div style="display: inline-block">
+            <input id="Cricket" type="checkbox" disabled />
+            <label for="Cricket">Cricket:</label>
+            <br />
+            <input id="Chess" type="checkbox" checked />
+            <label for="Chess">Chess:</label>
+            <br />
+            <input id="Book-reading" type="checkbox" checked disabled />
+            <label for="Book-reading">Book reading:</label>
+          </div>
+        </div>
+        <div class="individual-form">
+          <label for="price-range">Price Range:</label>
+          <input
+            id="price-range"
+            style="width: 50%"
+            type="range"
+            value="10"
+            min="5"
+            max="80"
+            disabled
+          />
+        </div>
+
+        <div class="individual-form">
+          <label for="color">Select Color:</label>
+          <input id="color" style="width: 50%" type="color" value="#aa00ff" />
+        </div>
+
+        <div class="individual-form">
+          <label for="image">Select image:</label>
+          <input
+            id="image"
+            style="width: 50%"
+            type="image"
+            src="../00 images/images/dora1.jpg"
+          />
+        </div>
+
+        <div class="individual-form">
+          <label for="file">Select file:</label>
+          <input
+            id="file"
+            style="width: 50%"
+            type="file"
+            accept=".pdf"
+            disabled
+          />
+        </div>
+
+        <div class="individual-form">
+          <input type="submit" value="Register" />
+          <input type="button" value="Click" />
+          <input type="reset" value="Reset" />
+          <button class="submit-btn">Submit</button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
