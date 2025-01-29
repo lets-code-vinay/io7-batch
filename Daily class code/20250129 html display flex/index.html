@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flexbox</title>
+    <style>
+      .parent,
+      .parent2 {
+        width: 80%;
+        margin: 10px auto;
+        border: 1px solid black;
+        padding: 5px;
+        background-color: rgb(162, 200, 200);
+        display: flex;
+        flex-wrap: wrap;
+      }
+      .child {
+        width: 200px;
+        height: 200px;
+        border: 1px solid black;
+        flex-shrink: 0;
+      }
+      .child:nth-child(even),
+      .child-a:nth-child(odd) {
+        background-color: red;
+      }
+      .child:nth-child(odd),
+      .child-a:nth-child(even) {
+        background-color: yellow;
+      }
+      .child {
+        flex-grow: 1;
+      }
+      .child-2 {
+        flex-grow: 3;
+      }
+      .child-8 {
+        flex-grow: 3;
+      }
+      .child-4 {
+        flex-shrink: 1;
+      }
+      .child-1,
+      .child-10 {
+        width: 100%;
+        height: 50px;
+      }
+
+      .parent2 {
+        background-color: azure;
+        flex-wrap: nowrap;
+      }
+      .child-a {
+        width: 200px;
+        height: 200px;
+        border: 1px solid black;
+        flex-shrink: 1;
+      }
+      .child-a-2 {
+        flex-shrink: 2;
+      }
+      .child-a-8 {
+        flex-shrink: 3;
+      }
+
+      .parent3 {
+        width: 80%;
+        height: 200px;
+        margin: 10px auto;
+        border: 1px solid rgb(149, 12, 12);
+        padding: 5px;
+        background-color: rgb(142, 218, 165);
+        display: flex;
+        /* flex-direction: column; */
+        /* flex-direction: column-reverse; */
+        /* flex-direction: row; */
+        flex-direction: row-reverse;
+      }
+      .child-b {
+        width: 100%;
+        height: 100%;
+        border: 1px solid red;
+      }
+      .child-b:nth-child(even) {
+        background-color: beige;
+      }
+      .child-b:nth-child(odd) {
+        background-color: lightgreen;
+      }
+
+      .parent4,
+      .parent5,
+      .parent6,
+      .parent7,
+      .parent8,
+      .parent9,
+      .parent10 {
+        width: 80%;
+        height: 100px;
+        margin: 10px auto;
+        border: 1px solid rgb(149, 12, 12);
+        padding: 5px;
+        background-color: rgb(142, 218, 165);
+        display: flex;
+      }
+      .parent4 {
+        justify-content: start;
+      }
+      .child-c {
+        width: 100px;
+        height: 100%;
+        border: 1px solid red;
+      }
+      .child-c-1 {
+        background-color: lavender;
+      }
+
+      .child-c-2 {
+        background-color: teal;
+      }
+      .parent5 {
+        justify-content: flex-start;
+      }
+      .parent6 {
+        justify-content: center;
+      }
+      .parent7 {
+        justify-content: space-between;
+      }
+      .parent8 {
+        justify-content: space-around;
+      }
+      .parent9 {
+        justify-content: space-evenly;
+      }
+      .parent10 {
+        justify-content: space-around;
+      }
+
+      .parent11,
+      .parent12,
+      .parent13,
+      .parent14,
+      .parent15,
+      .parent16,
+      .parent17,
+      .parent18,
+      .parent19,
+      .parent20,
+      .parent21 {
+        width: 80%;
+        height: 300px;
+        margin: 10px auto;
+        border: 1px solid rgb(56, 12, 12);
+        padding: 5px;
+        background-color: rgb(42, 205, 91);
+        display: flex;
+      }
+      .child-d {
+        width: 100px;
+        border: 1px solid red;
+      }
+      .child-d:nth-child(even) {
+        background-color: bisque;
+      }
+      .child-d:nth-child(odd) {
+        background-color: hotpink;
+      }
+      .parent11 {
+        align-items: start;
+      }
+      .parent12 {
+        align-items: flex-start;
+      }
+      .parent13 {
+        align-items: self-start;
+      }
+      .parent14 {
+        align-items: end;
+      }
+      .parent15 {
+        align-items: flex-end;
+      }
+      .parent16 {
+        align-items: self-end;
+      }
+      .parent17 {
+        align-items: center;
+        justify-content: center;
+      }
+      .parent18 {
+        align-items: stretch;
+        justify-content: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="parent">
+      <div class="child child-1">child-1</div>
+      <div class="child child-2">child-2</div>
+      <div class="child child-3">child-3</div>
+      <div class="child child-4">child-4</div>
+      <div class="child child-5">child-5</div>
+      <div class="child child-6">child-6</div>
+      <div class="child child-7">child-7</div>
+      <div class="child child-8">child-8</div>
+      <div class="child child-9">child-9</div>
+      <div class="child child-10">child-10</div>
+    </div>
+
+    <div class="parent2">
+      <div class="child-a child-a-1">child-a-1</div>
+      <div class="child-a child-a-2">child-a-2</div>
+      <div class="child-a child-a-3">child-a-3</div>
+      <div class="child-a child-a-4">child-a-4</div>
+      <div class="child-a child-a-5">child-a-5</div>
+      <div class="child-a child-a-6">child-a-6</div>
+      <div class="child-a child-a-7">child-a-7</div>
+      <div class="child-a child-a-8">child-a-8</div>
+      <div class="child-a child-a-9">child-a-9</div>
+      <div class="child-a child-a-10">child-a-10</div>
+    </div>
+
+    <div class="parent3">
+      <div class="child-b child-b-1">child-b-1</div>
+      <div class="child-b child-b-2">child-b-2</div>
+      <div class="child-b child-b-3">child-b-3</div>
+      <div class="child-b child-b-4">child-b-4</div>
+      <div class="child-b child-b-5">child-b-5</div>
+      <div class="child-b child-b-6">child-b-6</div>
+      <div class="child-b child-b-7">child-b-7</div>
+      <div class="child-b child-b-8">child-b-8</div>
+      <div class="child-b child-b-9">child-b-9</div>
+      <div class="child-b child-b-10">child-b-10</div>
+    </div>
+
+    <div class="parent4">
+      <div class="child-c child-c-1">justify-content-start</div>
+      <div class="child-c child-c-2">justify-content-start</div>
+    </div>
+    <div class="parent5">
+      <div class="child-c child-c-1">justify-content-flex-start</div>
+      <div class="child-c child-c-2">justify-content-flex-start</div>
+    </div>
+    <div class="parent6">
+      <div class="child-c child-c-1">justify-content-center</div>
+      <div class="child-c child-c-2">justify-content-center</div>
+    </div>
+    <div class="parent7">
+      <div class="child-c child-c-1">justify-content: space-between</div>
+      <div class="child-c child-c-2">justify-content: space-between</div>
+    </div>
+    <div class="parent8">
+      <div class="child-c child-c-1">justify-content: space-around</div>
+      <div class="child-c child-c-2">justify-content: space-around</div>
+    </div>
+    <div class="parent9">
+      <div class="child-c child-c-1">justify-content: space-evenly</div>
+      <div class="child-c child-c-2">justify-content: space-evenly</div>
+    </div>
+    <div class="parent10">
+      <div class="child-c child-c-1">child-c-1</div>
+      <div class="child-c child-c-2">child-c-2</div>
+      <div class="child-c child-c-2">child-c-2</div>
+      <div class="child-c child-c-2">child-c-2</div>
+    </div>
+
+    <div class="parent11">
+      <div class="child-d child-d-1">align-items-start</div>
+      <div class="child-d child-d-2">align-items-start</div>
+      <div class="child-d child-d-2">align-items-start</div>
+      <div class="child-d child-d-2">align-items-start</div>
+    </div>
+    <div class="parent12">
+      <div class="child-d child-d-1">align-items-flex-start</div>
+      <div class="child-d child-d-2">align-items-flex-start</div>
+      <div class="child-d child-d-2">align-items-flex-start</div>
+      <div class="child-d child-d-2">align-items-flex-start</div>
+    </div>
+    <div class="parent13">
+      <div class="child-d child-d-1">align-items-self-start</div>
+      <div class="child-d child-d-2">align-items-self-start</div>
+      <div class="child-d child-d-2">align-items-self-start</div>
+      <div class="child-d child-d-2">align-items-self-start</div>
+    </div>
+    <div class="parent14">
+      <div class="child-d child-d-1">align-items-end</div>
+      <div class="child-d child-d-2">align-items-end</div>
+      <div class="child-d child-d-2">align-items-end</div>
+      <div class="child-d child-d-2">align-items-end</div>
+    </div>
+    <div class="parent15">
+      <div class="child-d child-d-1">align-items-flex-end</div>
+      <div class="child-d child-d-2">align-items-flex-end</div>
+      <div class="child-d child-d-2">align-items-flex-end</div>
+      <div class="child-d child-d-2">align-items-flex-end</div>
+    </div>
+
+    <div class="parent16">
+      <div class="child-d child-d-1">align-items-self-end</div>
+      <div class="child-d child-d-2">align-items-self-end</div>
+      <div class="child-d child-d-2">align-items-self-end</div>
+      <div class="child-d child-d-2">align-items-self-end</div>
+    </div>
+    <div class="parent17">
+      <div class="child-d child-d-1">align-items-center</div>
+      <div class="child-d child-d-2">align-items-center</div>
+      <div class="child-d child-d-2">align-items-center</div>
+      <div class="child-d child-d-2">align-items-center</div>
+    </div>
+    <div class="parent18">
+      <div class="child-d child-d-1">align-items-center</div>
+      <div class="child-d child-d-2">align-items-center</div>
+      <div class="child-d child-d-2">align-items-center</div>
+      <div class="child-d child-d-2">align-items-center</div>
+    </div>
+  </body>
+</html>
