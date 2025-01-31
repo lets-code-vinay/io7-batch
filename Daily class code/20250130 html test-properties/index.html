@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    /* Pseudo class 
+        Single colon used
+        :
+
+        Pseudo element
+        double colon used
+        ::
+
+        */
+    a:link {
+      color: rgb(45, 6, 6);
+    }
+    a:hover {
+      color: brown;
+    }
+    a:active {
+      color: yellow;
+    }
+
+    .hello-link:visited {
+      color: rgb(5, 225, 225) !important;
+    }
+
+    .text-start {
+      text-align: start;
+    }
+
+    .text-left {
+      text-align: left;
+    }
+
+    .text-end {
+      text-align: end;
+    }
+    .text-right {
+      text-align: right;
+    }
+
+    .text-center {
+      text-align: center;
+    }
+
+    .text-normal {
+      width: 200px;
+      border: 1px solid black;
+      display: inline-block;
+      padding: 5px;
+    }
+
+    .text-justify {
+      display: inline-block;
+      padding: 5px;
+      width: 200px;
+      text-align: justify;
+      border: 1px solid black;
+    }
+    .text-decoration1 {
+      text-decoration: underline;
+    }
+    .text-decoration2 {
+      text-decoration: overline;
+    }
+    .text-decoration3 {
+      text-decoration: overline underline;
+    }
+    .text-decoration4 {
+      text-decoration: line-through;
+    }
+
+    .text-decoration5 {
+      text-decoration-style: dashed;
+      text-decoration-line: underline;
+    }
+    .text-decoration6 {
+      text-decoration-style: dotted;
+      text-decoration-line: line-through;
+    }
+    .text-decoration7 {
+      text-decoration-style: double;
+      text-decoration-line: underline;
+    }
+    .text-decoration8 {
+      text-decoration-style: wavy;
+      text-decoration-line: overline;
+    }
+    .text-decoration9 {
+      text-decoration-style: wavy;
+      text-decoration-line: underline;
+      text-decoration-color: red;
+    }
+    .text-decoration10 {
+      text-decoration-style: wavy;
+      text-decoration-line: line-through;
+      text-decoration-color: blue;
+      text-decoration-thickness: 5px;
+    }
+    .text-decoration11 {
+      /* text-decoration: line style color thickness; */
+      text-decoration: overline dotted green 3px;
+    }
+
+    .text-decoration12 {
+      /* text-decoration: line style color thickness; */
+      text-decoration: none;
+    }
+
+    .transform1 {
+      text-transform: lowercase;
+    }
+    .transform2 {
+      text-transform: uppercase;
+    }
+    .transform3 {
+      text-transform: capitalize;
+    }
+
+    .indent {
+      text-indent: 50%;
+      text-align: justify;
+    }
+
+    .writin-mode {
+      writing-mode: vertical-lr;
+    }
+    .writin-mode2 {
+      writing-mode: vertical-rl;
+    }
+
+    .p-style {
+      width: 50%;
+      margin: auto;
+      border: 1px solid black;
+      background-color: red;
+      color: yellow;
+      cursor: pointer;
+      transition: 1s;
+    }
+    .p-style:hover {
+      background-color: yellow;
+      color: red;
+      width: 70%;
+      margin-left: 5%;
+      border: 1px solid blue;
+    }
+
+    .cursors {
+      width: 50%;
+      margin: auto;
+      border: 1px solid black;
+      /* cursor: url("../0assets/cursor/Handwriting.cur"), auto; */
+      cursor: url("../0assets/cursor/cursor.cur"), auto;
+    }
+  </style>
+  <body>
+    <a
+      class="text-decoration12"
+      href="https://chat.deepseek.com/"
+      target="_blank"
+      >Deepseek</a
+    >
+    <a
+      class="text-decoration11"
+      href="https://chat.deepseek.com/"
+      target="_blank"
+      >Deepseek2</a
+    >
+    <a href="https://chat.deepseek.com/" target="_blank">Deepseek3</a>
+    <a href="https://chat.deepseek.com/" target="_blank">Deepseek4</a>
+
+    <a class="hello-link" href="https://chat.deepseek.com/" target="_blank"
+      >hello</a
+    >
+    <p style="cursor: pointer">Hello Chandni</p>
+
+    <hr />
+    <h1>--Text properties--</h1>
+    <hr />
+
+    <p class="text-start">
+      Test align start--A 100-word paragraph is usually made up of 6–10
+      sentences. It should include the most important elements of the topic.
+    </p>
+
+    <p class="text-left">
+      Test align left--A 100-word paragraph is usually made up of 6–10
+      sentences. It should include the most important elements of the topic.
+    </p>
+
+    <p class="text-end">
+      Test align right--A 100-word paragraph is usually made up of 6–10
+      sentences. It should include the most important elements of the topic.
+    </p>
+
+    <p class="text-right">
+      Test align right--A 100-word paragraph is usually made up of 6–10
+      sentences. It should include the most important elements of the topic.
+    </p>
+
+    <p class="text-center">
+      Test align center--A 100-word paragraph is usually made up of 6–10
+      sentences. It should include the most important elements of the topic.
+    </p>
+
+    <p class="text-normal">
+      Test align normal--A 100-word paragraph is usually made up of 6–10
+      sentences. It should include the most important elements of the topic.
+    </p>
+
+    <p class="text-justify">
+      Test align justify--A 100-word paragraph is usually made up of 6–10
+      sentences. It should include the most important elements of the topic.
+    </p>
+
+    <p class="text-decoration1">
+      Text decoration- underline-- Paragraph on India in 200 Words
+    </p>
+    <p class="text-decoration2">
+      Text decoration- overline-- Paragraph on India in 200 Words
+    </p>
+
+    <p class="text-decoration3">
+      Text decoration- overline-undeline-- Paragraph on India in 200 Words
+    </p>
+    <p class="text-decoration4">
+      Text decoration- line-through-- Paragraph on India in 200 Words
+    </p>
+    <p class="text-decoration5">
+      Text decoration- dashed-- Paragraph on India in 200 Words
+    </p>
+    <p class="text-decoration6">
+      Text decoration- overline-undeline-- Paragraph on India in 200 Words
+    </p>
+    <p class="text-decoration7">
+      Text decoration- overline-undeline-- Paragraph on India in 200 Words
+    </p>
+    <p class="text-decoration8">
+      Text decoration- overline-undeline-- Paragraph on India in 200 Words
+    </p>
+    <p class="text-decoration9">
+      Text decoration- overline-undeline-- Paragraph on India in 200 Words
+    </p>
+    <p class="text-decoration10">
+      Text decoration- overline-undeline-- Paragraph on India in 200 Words
+    </p>
+
+    <p class="text-decoration11">
+      Text decoration- shorthand-- Paragraph on India in 200 Words
+    </p>
+
+    <p class="transform1">
+      India is one of the strongest countries in the world. It is the
+      seventh-largest country in the world area-wise and the second-most
+      populous country in the world. India shares its borders with countries
+      like Pakistan, Afghanistan, China, Nepal, Bhutan, Myanmar and Bangladesh.
+      It also shares its borders with Sri Lanka and the Maldives. It is a
+      secular and democratic country that respects all religions and the people
+      of India have the liberty to practise any religion they want.
+    </p>
+
+    <p class="transform2">
+      India is one of the strongest countries in the world. It is the
+      seventh-largest country in the world area-wise and the second-most
+      populous country in the world. India shares its borders with countries
+      like Pakistan, Afghanistan, China, Nepal, Bhutan, Myanmar and Bangladesh.
+      It also shares its borders with Sri Lanka and the Maldives. It is a
+      secular and democratic country that respects all religions and the people
+      of India have the liberty to practise any religion they want.
+    </p>
+
+    <p class="transform3">
+      India is one of the strongest countries in the world. It is the
+      seventh-largest country in the world area-wise and the second-most
+      populous country in the world. India shares its borders with countries
+      like Pakistan, Afghanistan, China, Nepal, Bhutan, Myanmar and Bangladesh.
+      It also shares its borders with Sri Lanka and the Maldives. It is a
+      secular and democratic country that respects all religions and the people
+      of India have the liberty to practise any religion they want.
+    </p>
+    <p class="indent">
+      India is one of the strongest countries in the world. It is the
+      seventh-largest country in the world area-wise and the second-most
+      populous country in the world. India shares its borders with countries
+      like Pakistan, Afghanistan, China, Nepal, Bhutan, Myanmar and Bangladesh.
+      It also shares its borders with Sri Lanka and the Maldives. It is a
+      secular and democratic country that respects all religions and the people
+      of India have the liberty to practise any religion they want.
+    </p>
+
+    <p class="writin-mode">writing-mode-- Paragraph on India in 200 Words</p>
+    <p class="writin-mode2">writing-mode-- Paragraph on India in 200 Words</p>
+
+    <p class="p-style indent">
+      India is one of the strongest countries in the world. It is the
+      seventh-largest country in the world area-wise and the second-most
+      populous country in the world. India shares its borders with countries
+      like Pakistan, Afghanistan, China, Nepal, Bhutan, Myanmar and Bangladesh.
+      It also shares its borders with Sri Lanka and the Maldives. It is a
+      secular and democratic country that respects all religions and the people
+      of India have the liberty to practise any religion they want.
+    </p>
+
+    <p class="cursors">
+      India is one of the strongest countries in the world. It is the
+      seventh-largest country in the world area-wise and the second-most
+      populous country in the world. India shares its borders with countries
+      like Pakistan, Afghanistan, China, Nepal, Bhutan, Myanmar and Bangladesh.
+      It also shares its borders with Sri Lanka and the Maldives. It is a
+      secular and democratic country that respects all religions and the people
+      of India have the liberty to practise any religion they want.
+    </p>
+  </body>
+</html>
