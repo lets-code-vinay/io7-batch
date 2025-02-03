@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Position-relative</title>
+    <style>
+      .main {
+        width: 50%;
+        height: 200px;
+        background-color: aquamarine;
+        border: 1px solid gold;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+      }
+
+      .element {
+        width: 20%;
+        height: 80%;
+        background-color: red;
+      }
+
+      .relatives {
+        background-color: rgb(186, 146, 146);
+        position: relative;
+        top: 20%;
+        right: 20%;
+        z-index: -1;
+      }
+    </style>
+  </head>
+  <body>
+    <!--
+        Position -- Position of any element towards its parents
+
+        1. position: static  (default)
+        2. position: relative (element got independent from it's parent and relocates to its position)
+        3. position: absolute (element has parent with relative property 
+                                if parent doesn't have relative property then 
+                                it makes body as it's parent)
+        4. position; fixed: (element got fixed at its position and doesn't move)
+        5. position; sticky: (element got fixed but it moves at specific area
+
+    -->
+
+    <div class="main">
+      <div class="element"></div>
+
+      <div class="element relatives"></div>
+
+      <div class="element"></div>
+    </div>
+  </body>
+</html>

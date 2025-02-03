@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Element Visibility</title>
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="../00 images/favicon/android-chrome-512x512.png"
+    />
+    <style>
+      .main {
+        background-color: red;
+        width: 70%;
+        height: 500px;
+        border: 1px solid black;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+      }
+
+      .clickable-element {
+        background-color: yellow;
+        width: 300px;
+        height: 300px;
+        border: 1px solid black;
+      }
+      .display {
+        display: none;
+      }
+
+      .visibility {
+        visibility: hidden;
+      }
+
+      .opacity {
+        opacity: 0;
+      }
+
+      .vertical img {
+        /* vertical-align: baseline; image is above the text */
+        vertical-align: bottom; /* image is is at center the text */
+        /*
+        vertical-align: baseline
+        vertical-align: bottom
+        vertical-align: top
+        vertical-align: sub
+        vertical-align: super
+        vertical-align: text-bottom
+        vertical-align: text-top       
+        */
+      }
+    </style>
+  </head>
+  <!--
+    to hide any element
+    1. display: none
+    2. visibility: hidden
+    3. opacity: 0
+
+    ______________________________________________
+    |Action type | Display |  Visibility | Opacity| 
+    ----------------------------------------------
+    |Visible     | No      |  no         | no     | 
+    ----------------------------------------------
+    |html node   | Yes     |  YES        | YES    | 
+    ----------------------------------------------
+    |Space Cover | NO      |  YES        | YES    | 
+    ----------------------------------------------
+    |Action perf |  NO     |  NO         | YES    | 
+    ----------------------------------------------
+    
+  -->
+  <body>
+    <div class="main">
+      <a class="display" href="https://www.youtube.com/" target="_blank">
+        <div class="clickable-element"></div>
+      </a>
+
+      <a class="visibility" href="https://www.youtube.com/" target="_blank">
+        <div class="clickable-element"></div>
+      </a>
+
+      <a class="opacity" href="https://www.youtube.com/" target="_blank">
+        <div class="clickable-element"></div>
+      </a>
+    </div>
+
+    <ul style="display: flex; width: 50%; justify-content: space-between">
+      <li>
+        <a href="https://www.youtube.com/" target="_blank"> Hello</a>
+      </li>
+      <li>
+        <a
+          style="visibility: hidden"
+          href="https://www.youtube.com/"
+          target="_blank"
+          >Hello1</a
+        >
+      </li>
+      <li>
+        <a href="https://www.youtube.com/" target="_blank">Hello2</a>
+      </li>
+
+      <li>
+        <a style="display: none" href="https://www.youtube.com/" target="_blank"
+          >Hello3</a
+        >
+      </li>
+
+      <li>
+        <a href="https://www.youtube.com/" target="_blank">Hello4</a>
+      </li>
+      <li>
+        <a style="opacity: 0" href="https://www.youtube.com/" target="_blank"
+          >Hello5</a
+        >
+      </li>
+    </ul>
+
+    <p style="letter-spacing: 5px">
+      letter-spacing: 5px -- Generating random paragraphs can be an excellent
+      way for writers to get their creative flow going at the beginning of the
+      day. The writer has no idea what topic the random paragraph will be about
+      when it appears. This forces the writer to use creativity to complete one
+      of three common writing challenges. The writer can use the paragraph as
+      the first one of a short story and build upon it. A second option is to
+      use the random paragraph somewhere in a short story they create. The third
+      option is to have the random paragraph be the ending paragraph in a short
+      story. No matter which of these challenges is undertaken, the writer is
+      forced to use creativity to incorporate the paragraph into their writing.
+    </p>
+
+    <p style="line-height: 10px">
+      line-height;: 5px -- Generating random paragraphs can be an excellent way
+      for writers to get their creative flow going at the beginning of the day.
+      The writer has no idea what topic the random paragraph will be about when
+      it appears. This forces the writer to use creativity to complete one of
+      three common writing challenges. The writer can use the paragraph as the
+      first one of a short story and build upon it. A second option is to use
+      the random paragraph somewhere in a short story they create. The third
+      option is to have the random paragraph be the ending paragraph in a short
+      story. No matter which of these challenges is undertaken, the writer is
+      forced to use creativity to incorporate the paragraph into their writing.
+    </p>
+
+    <p style="word-spacing: 20px">
+      word-spacing;: 5px -- Generating random paragraphs can be an excellent way
+      for writers to get their creative flow going at the beginning of the day.
+      The writer has no idea what topic the random paragraph will be about when
+      it appears. This forces the writer to use creativity to complete one of
+      three common writing challenges. The writer can use the paragraph as the
+      first one of a short story and build upon it. A second option is to use
+      the random paragraph somewhere in a short story they create. The third
+      option is to have the random paragraph be the ending paragraph in a short
+      story. No matter which of these challenges is undertaken, the writer is
+      forced to use creativity to incorporate the paragraph into their writing.
+    </p>
+
+    <q>Be yourself; everyone else is already taken.</q>
+    <cite>― Oscar Wilde</cite>
+
+    <blockquote cite="https://www.goodreads.com/quotes">
+      <p>
+        I'm selfish, impatient and a little insecure. I make mistakes, I am out
+        of control and at times hard to handle. But if you can't handle me at my
+        worst, then you sure as hell don't deserve me at my best.
+      </p>
+    </blockquote>
+
+    <p>Mr. Narendra Modi is <abbr title="Prime Minister">PM</abbr> of India</p>
+
+    <p>
+      This is a Famous paining of
+      <cite title=" painted by Leonardo da Vinci"> Monalisa</cite>
+    </p>
+
+    <address>st. no1 Lohara, Ludhiana</address>
+
+    <code> const a + b == 30</code>
+
+    <picture>
+      <source
+        media="(max-width: 350px)"
+        srcset="
+          https://rabbit.org/wp-content/uploads/2024/01/SarahMclachlanandbabies-1024x457.jpg
+        "
+      />
+      <source
+        media="(max-width: 650px)"
+        srcset="
+          https://www.zooplus.co.uk/magazine/wp-content/uploads/2018/09/Cute-rabbit-in-the-grass-768x508.jpeg
+        "
+      />
+      <img src="../00 images/images/girl.webp" style="width: auto" />
+    </picture>
+
+    <p class="vertical">
+      The
+      <img
+        src="../00 images/icons/book-logo.png"
+        alt="rabbit-icon"
+        width="20"
+      />This is a book
+    </p>
+  </body>
+</html>
