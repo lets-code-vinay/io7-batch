@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Youtube</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      html {
+        font-size: 62.5%;
+      }
+      header {
+        width: 100%;
+        height: 50px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 2rem;
+      }
+
+      .logo-container,
+      .search-container,
+      .action-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      .logo-container {
+        width: 8%;
+        margin-left: 1%;
+        height: 100%;
+      }
+      .logo-container div i {
+        color: #030303;
+      }
+
+      .logo {
+        color: #ff0033 !important;
+      }
+      .search-container {
+        width: 30%;
+        align-items: center;
+      }
+      .search-container div {
+        width: 95%;
+        display: flex;
+        justify-content: center;
+      }
+      .search-container div input {
+        width: 89%;
+        height: 30px;
+        border: 1px solid rgb(207, 202, 202);
+        border-top-left-radius: 30px;
+        border-bottom-left-radius: 30px;
+        padding-left: 5px;
+        border-right: none;
+      }
+      .search-container div button {
+        width: 10%;
+        height: 30px;
+        border-top-right-radius: 30px;
+        border-bottom-right-radius: 30px;
+        border: 1px solid rgb(207, 202, 202);
+      }
+      .action-container {
+        width: 15%;
+        margin-right: 1%;
+      }
+      header img {
+        border-radius: 50%;
+      }
+
+      .create-btn {
+        width: 100px;
+        height: 30px;
+        border-radius: 50px;
+        background-color: #f3f3f2;
+        border: none;
+      }
+
+      .notification-positioning {
+        position: relative;
+        width: 40px;
+      }
+
+      .notification-positioning i {
+        color: #030202;
+      }
+
+      .notification {
+        position: absolute;
+        top: -20%;
+        right: 25%;
+        text-align: center;
+        color: wheat;
+        background-color: red;
+        width: 15px;
+        height: 15px;
+        border-radius: 10px;
+        font-size: 1.5rem;
+        font-weight: 800;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="logo-container">
+        <div><i class="fa-solid fa-bars"></i></div>
+        <div style="display: flex; align-items: center; margin-left: 10px">
+          <i class="fa-brands fa-youtube logo"></i>
+          <p style="color: #000101; font-size: 2.5rem; font-weight: 700">
+            YouTube
+          </p>
+          <p style="margin-top: -10px; font-size: 1rem; font-weight: 600">IN</p>
+        </div>
+      </div>
+
+      <div class="search-container">
+        <div>
+          <input placeholder="Search" />
+          <button><i class="fa-solid fa-magnifying-glass"></i></button>
+        </div>
+        <i class="fa-solid fa-microphone"></i>
+      </div>
+
+      <div class="action-container">
+        <button class="create-btn">
+          <i class="fa-solid fa-plus"></i>
+          Create
+        </button>
+        <div class="notification-positioning">
+          <i class="fa-regular fa-envelope"></i>
+          <p class="notification">5</p>
+        </div>
+
+        <div class="notification-positioning">
+          <i class="fa-regular fa-bell"></i>
+          <p class="notification">8</p>
+        </div>
+        <img
+          src="../00 images/images/girl.webp"
+          alt="avatar"
+          width="40px"
+          height="40px"
+        />
+      </div>
+    </header>
+  </body>
+</html>

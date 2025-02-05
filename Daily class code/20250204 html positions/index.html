@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Positions</title>
+    <style>
+      .main {
+        width: 50%;
+        height: 200px;
+        background-color: aquamarine;
+        border: 1px solid gold;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+      }
+
+      .element {
+        width: 20%;
+        height: 80%;
+        background-color: red;
+        z-index: 1;
+      }
+
+      .relatives {
+        background-color: rgb(186, 146, 146);
+        position: relative;
+        top: 20%;
+        right: 10%;
+        z-index: -2;
+      }
+
+      .main2 {
+        width: 80%;
+        height: 500px;
+        margin: 2% auto;
+        background-color: rgb(35, 173, 127);
+        border: 1px solid rgb(67, 61, 25);
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+      }
+
+      .parent {
+        width: 20%;
+        height: 80%;
+        background-color: rgb(223, 202, 202);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+      }
+      .child {
+        width: 80%;
+        height: 80%;
+        background-color: rgb(174, 36, 36);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .grand-child {
+        width: 100px;
+        height: 200px;
+        background-color: rgb(65, 86, 192);
+        position: absolute;
+        top: 0%;
+        left: 0%;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- <div class="main">
+      <div class="element"></div>
+
+      <div class="element relatives"></div>
+
+      <div class="element"></div>
+    </div> -->
+    A
+    <div class="main2">
+      B
+      <div class="parent"></div>
+      C
+      <div class="parent">
+        D
+        <div class="child">
+          E
+          <div class="grand-child">F</div>
+        </div>
+      </div>
+
+      <div class="parent">
+        <img
+          src="../00 images/images/dora-family.jpg"
+          alt="dora family"
+          width="100%"
+          height="100%"
+          style="position: absolute; top: 0; left: 0"
+        />
+        <img
+          src="../00 images/images/dora2.png"
+          alt="dora"
+          width="200px"
+          style="position: absolute; bottom: 0%; right: -10%"
+        />
+      </div>
+    </div>
+  </body>
+</html>

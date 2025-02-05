@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Youtube</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      html {
+        font-size: 62.5%;
+      }
+      header {
+        width: 100%;
+        height: 50px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 2rem;
+        /* position: fixed;
+        top: 0;
+        left: 0; */
+        background-color: rgb(232, 211, 211);
+      }
+
+      .logo-container,
+      .search-container,
+      .action-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      .logo-container {
+        width: 8%;
+        margin-left: 1%;
+        height: 100%;
+      }
+      .logo-container div i {
+        color: #030303;
+      }
+
+      .logo {
+        color: #ff0033 !important;
+      }
+      .search-container {
+        width: 30%;
+        align-items: center;
+      }
+      .search-container div {
+        width: 95%;
+        display: flex;
+        justify-content: center;
+      }
+      .search-container div input {
+        width: 89%;
+        height: 30px;
+        border: 1px solid rgb(207, 202, 202);
+        border-top-left-radius: 30px;
+        border-bottom-left-radius: 30px;
+        padding-left: 5px;
+        border-right: none;
+      }
+      .search-container div button {
+        width: 10%;
+        height: 30px;
+        border-top-right-radius: 30px;
+        border-bottom-right-radius: 30px;
+        border: 1px solid rgb(207, 202, 202);
+      }
+      .action-container {
+        width: 15%;
+        margin-right: 1%;
+      }
+      header img {
+        border-radius: 50%;
+      }
+
+      .create-btn {
+        width: 100px;
+        height: 30px;
+        border-radius: 50px;
+        background-color: #f3f3f2;
+        border: none;
+      }
+
+      .notification-positioning {
+        position: relative;
+        width: 40px;
+      }
+
+      .notification-positioning i {
+        color: #030202;
+      }
+
+      .notification {
+        position: absolute;
+        top: -20%;
+        right: 25%;
+        text-align: center;
+        color: wheat;
+        background-color: red;
+        width: 15px;
+        height: 15px;
+        border-radius: 10px;
+        font-size: 1.5rem;
+        font-weight: 800;
+      }
+
+      .main-section {
+        width: 100%;
+        background-color: rebeccapurple;
+        /* margin-top: 50px; */
+        text-align: justify;
+      }
+
+      footer {
+        width: 100%;
+        height: 50px;
+        background-color: rgb(232, 211, 211);
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        z-index: 1;
+      }
+
+      .chat {
+        position: fixed;
+        bottom: 5%;
+        right: 0%;
+        z-index: 2;
+      }
+
+      .dora {
+        width: 200px;
+        position: sticky;
+        top: 5%;
+        float: right;
+      }
+
+      .top-header {
+        /* position: sticky; */
+        background-color: #e1667f;
+      }
+
+      .second-header {
+        position: sticky;
+        top: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <header class="top-header">
+      <div style="width: 90%">
+        <p
+          class=""
+          style="text-align: center; font-size: 30px; font-weight: 900"
+        >
+          Welcome to Youtube
+        </p>
+      </div>
+    </header>
+
+    <header class="second-header">
+      <div class="logo-container">
+        <div><i class="fa-solid fa-bars"></i></div>
+        <div style="display: flex; align-items: center; margin-left: 10px">
+          <i class="fa-brands fa-youtube logo"></i>
+          <p style="color: #000101; font-size: 2.5rem; font-weight: 700">
+            YouTube
+          </p>
+          <p style="margin-top: -10px; font-size: 1rem; font-weight: 600">IN</p>
+        </div>
+      </div>
+
+      <div class="search-container">
+        <div>
+          <input placeholder="Search" />
+          <button><i class="fa-solid fa-magnifying-glass"></i></button>
+        </div>
+        <i class="fa-solid fa-microphone"></i>
+      </div>
+
+      <div class="action-container">
+        <button class="create-btn">
+          <i class="fa-solid fa-plus"></i>
+          Create
+        </button>
+        <div class="notification-positioning">
+          <i class="fa-regular fa-envelope"></i>
+          <p class="notification">5</p>
+        </div>
+
+        <div class="notification-positioning">
+          <i class="fa-regular fa-bell"></i>
+          <p class="notification">8</p>
+        </div>
+        <img
+          src="../00 images/images/girl.webp"
+          alt="avatar"
+          width="40px"
+          height="40px"
+        />
+      </div>
+    </header>
+
+    <main class="main-section">
+      <p style="font-size: 30px; width: 50%; margin: 0 auto 4%">
+        Random Paragraph Generator Number of Paragraphs: 1 Please LIKE & SHARE
+        to keep our generators available! Click Like It had become a far too
+        common an event in her life. She has specifically placed the key to the
+        box in a special place so that she wouldn't lose it and know exactly
+        where it was when the key was needed. Now that she needed to open the
+        box, she had absolutely no idea where that special spot she placed the
+        key might be. If you're looking for random paragraphs, you've come to
+        the right place. When a random word or a random sentence isn't quite
+        enough, the next logical step is to find a random paragraph. We created
+        the Random Paragraph Generator with you in mind. The process is quite
+        simple. Choose the number of random paragraphs you'd like to see and
+        click the button. Your chosen number of paragraphs will instantly
+        appear. While it may not be obvious to everyone, there are a number of
+        reasons creating random paragraphs can be useful. A few examples of how
+        some people use this generator are listed in the following paragraphs.
+        Creative Writing Generating random paragraphs can be an excellent way
+        for writers to get their creative flow going at the beginning of the
+        day. The writer has no idea what topic the random paragraph will be
+        about when it appears. This forces the writer to use creativity to
+        complete one of three common writing challenges. The writer can use the
+        paragraph as the first one of a short story and build upon it. A second
+        option is to use the random paragraph somewhere in a short story they
+        create. The third option is to have the random paragraph be the ending
+        paragraph in a short story. No matter which of these challenges is
+        undertaken, the writer is forced to use creativity to incorporate the
+        paragraph into their writing. Tackle Writers' Block A random paragraph
+        can also be an excellent way for a writer to tackle writers' block.
+        Writing block can often happen due to being stuck with a current project
+        that the writer is trying to complete. By inserting a completely random
+        paragraph from which to begin, it can take down some of the issues that
+        may have been causing the writers' block in the first place. Beginning
+        Writing Routine Another productive way to use this tool to begin a daily
+        writing routine. One way is to generate a random paragraph with the
+        intention to try to rewrite it while still keeping the original meaning.
+        The purpose here is to just get the writing started so that when the
+        writer goes onto their day's writing projects, words are already flowing
+        from their fingers. Writing Challenge Another writing challenge can be
+        to take the individual sentences in the random paragraph and incorporate
+        a single sentence from that into a new paragraph to create a short
+        story. Unlike the random sentence generator, the sentences from the
+        random paragraph will have some connection to one another so it will be
+        a bit different. You also won't know exactly how many sentences will
+        appear in the random paragraph. Programmers It's not only writers who
+        can benefit from this free online tool. If you're a programmer who's
+        working on a project where blocks of text are needed, this tool can be a
+        great way to get that. It's a good way to test your programming and that
+        the tool being created is working well. Above are a few examples of how
+        the random paragraph generator can be beneficial. The best way to see if
+        this random paragraph picker will be useful for your intended purposes
+        is to give it a try.
+        <img src="../00 images/images/dora2.png" alt="dora" class="dora" />
+        Generate a number of paragraphs to see if they are beneficial to your
+        current project. If you do find this paragraph tool useful, please do us
+        a favor and let us know how you're using it. It's greatly beneficial for
+        us to know the different ways this tool is being used so we can improve
+        it with updates. This is especially true since there are times when the
+        generators we create get used in completely unanticipated ways from when
+        we initially created them. If you have the time, please send us a quick
+        note on what you'd like to see changed or added to make it better in the
+        future. Frequently Asked Questions Can I use these random paragraphs for
+        my project? Yes! All of the random paragraphs in our generator are free
+        to use for your projects. Does a computer generate these paragraphs? No!
+        All of the paragraphs in the generator are written by humans, not
+        computers. When first building this generator we thought about using
+        computers to generate the paragraphs, but they weren't very good and
+        many times didn't make any sense at all. We therefore took the time to
+        create paragraphs specifically for this generator to make it the best
+        that we could. Can I contribute random paragraphs? Yes. We're always
+        interested in improving this generator and one of the best ways to do
+        that is to add new and interesting paragraphs to the generator. If you'd
+        like to contribute some random paragraphs, please contact us. How many
+        words are there in a paragraph? There are usually about 200 words in a
+        paragraph, but this can vary widely. Most paragraphs focus on a single
+        idea that's expressed with an introductory sentence, then followed by
+        two or more supporting sentences about the idea. A short paragraph may
+        not reach even 50 words while long paragraphs can be over 400 words
+        long, but generally speaking they tend to be approximately 200 words in
+        length.
+      </p>
+    </main>
+    <img
+      class="chat"
+      src="../00 images/icons/chat-service.png"
+      alt="chat"
+      width="100"
+    />
+    <footer></footer>
+  </body>
+</html>
