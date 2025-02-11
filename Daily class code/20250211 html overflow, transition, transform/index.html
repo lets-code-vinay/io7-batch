@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>overflow</title>
+    <style>
+      .child {
+        height: 300px;
+        width: 600px;
+        margin: auto;
+        background-color: red;
+        /* overflow: hidden; */
+        /* overflow: auto; */
+        /* overflow: scroll; */
+        overflow-y: scroll;
+      }
+      p.long-paragraph {
+        width: 800px;
+      }
+
+      ::-webkit-scrollbar {
+        width: 5px;
+        height: 5px;
+        background-color: blue;
+        border-radius: 5px;
+      }
+
+      ::-webkit-scrollbar-button {
+        background-color: yellow;
+        width: 5px;
+        border-radius: 5px;
+      }
+      ::-webkit-scrollbar-thumb {
+        background-color: rgb(208, 148, 148);
+        border-radius: 5px;
+      }
+      ::-webkit-scrollbar-track {
+        background-color: brown;
+        border-radius: 5px;
+      }
+      ::-webkit-scrollbar-track-piece {
+        background-color: black;
+      }
+      div.text-is-overflowing {
+        width: 600px;
+        background-color: aqua;
+        margin: 10px auto;
+      }
+      .short-paragraph {
+        width: 100%;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+
+      .main2 {
+        width: 80%;
+        margin: 2% auto;
+        background-color: lightblue;
+        border: 1px solid black;
+        height: 600px;
+      }
+
+      .hello1 {
+        background-color: red;
+        border: 1px solid green;
+        padding: 5px;
+        width: 100px;
+        margin-left: 2%;
+        transition-property: width background-color color transform;
+        transition-duration: 2s;
+        /* transition-delay: 1s; */
+        /* transition-timing-function: ease-in; */ /*slow-start, fast-end*/
+        /* transition-timing-function: ease-out; fast-start, slow-end */
+        transition-timing-function: ease-in-out; /*fast-start, slow-end*/
+      }
+
+      .hello1:hover {
+        width: 300px;
+        background-color: rgb(7, 31, 102);
+        border: 2px solid rgb(8, 90, 8);
+        padding: 5px;
+        margin-left: 2%;
+        color: white;
+        transform: rotate(15deg);
+      }
+      .img-class {
+        width: 200px;
+        height: 200px;
+        border-radius: 10px;
+        border: 1px solid black;
+      }
+      .img1 {
+        /* transition shorthand */
+        /* property-name duration delay timing-function */
+        /* transition: transform 2s 1s ease-in; */
+        transition: transform 2s ease-in;
+        border-radius: 50%;
+      }
+      .img1:hover {
+        /* To rotate any element */
+        transform: rotate(360deg);
+      }
+
+      .img2,
+      .img3,
+      .img4,
+      .img5,
+      .img6,
+      .img7,
+      .img8,
+      .img9,
+      .img10,
+      .img11 {
+        border: none;
+        transition: transform 1s;
+        cursor: pointer;
+      }
+
+      .img2:hover {
+        transform: scale(1.2);
+      }
+
+      .img3:hover {
+        transform: scaleY(1.2);
+      }
+      .img4:hover {
+        transform: scaleX(1.5);
+      }
+
+      .img5:hover {
+        transform: scale(2.5, 0.8);
+      }
+
+      .img6:hover {
+        transform: translateX(100px);
+      }
+      .img7:hover {
+        transform: translateY(-100px);
+      }
+      .img8:hover {
+        transform: translate(-100px, -200px);
+      }
+      .img9:hover {
+        transform: skewX(45deg);
+      }
+
+      .img10:hover {
+        transform: skewY(45deg);
+      }
+
+      .img11:hover {
+        transform: skew(45deg, 30deg);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="text-is-overflowing">
+      <p class="short-paragraph">
+        Your chosen number of paragraphs will instantly appear. While it may not
+        be obvious to everyone, there are a number of reasons creating random
+        paragraphs can be useful.
+      </p>
+    </div>
+    <div class="child">
+      <p class="long-paragraph">
+        If you're looking for random paragraphs, you've come to the right place.
+        When a random word or a random sentence isn't quite enough, the next
+        logical step is to find a random paragraph. We created the Random
+        Paragraph Generator with you in mind. The process is quite simple.
+        Choose the number of random paragraphs you'd like to see and click the
+        button. Your chosen number of paragraphs will instantly appear. While it
+        may not be obvious to everyone, there are a number of reasons creating
+        random paragraphs can be useful. A few examples of how some people use
+        this generator are listed in the following paragraphs. Creative Writing
+        Generating random paragraphs can be an excellent way for writers to get
+        their creative flow going at the beginning of the day. The writer has no
+        idea what topic the random paragraph will be about when it appears. This
+        forces the writer to use creativity to complete one of three common
+        writing challenges. The writer can use the paragraph as the first one of
+        a short story and build upon it. A second option is to use the random
+        paragraph somewhere in a short story they create. The third option is to
+        have the random paragraph be the ending paragraph in a short story. No
+        matter which of these challenges is undertaken, the writer is forced to
+        use creativity to incorporate the paragraph into their writing. Tackle
+        Writers' Block A random paragraph can also be an excellent way for a
+        writer to tackle writers' block. Writing block can often happen due to
+        being stuck with a current project that the writer is trying to
+        complete. By inserting a completely random paragraph from which to
+        begin, it can take down some of the issues that may have been causing
+        the writers' block in the first place. Beginning Writing Routine Another
+        productive way to use this tool to begin a daily writing routine. One
+        way is to generate a random paragraph with the intention to try to
+        rewrite it while still keeping the original meaning. The purpose here is
+        to just get the writing started so that when the writer goes onto their
+        day's writing projects, words are already flowing from their fingers.
+        Writing Challenge Another writing challenge can be to take the
+        individual sentences in the random paragraph and incorporate a single
+        sentence from that into a new paragraph to create a short story. Unlike
+        the random sentence generator, the sentences from the random paragraph
+        will have some connection to one another so it will be a bit different.
+        You also won't know exactly how many sentences will appear in the random
+        paragraph. Programmers It's not only writers who can benefit from this
+        free online tool. If you're a programmer who's working on a project
+        where blocks of text are needed, this tool can be a great way to get
+        that. It's a good way to test your programming and that the tool being
+        created is working well. Above are a few examples of how the random
+        paragraph generator can be beneficial. The best way to see if this
+        random paragraph picker will be useful for your intended purposes is to
+        give it a try. Generate a number of paragraphs to see if they are
+        beneficial to your current project. If you do find this paragraph tool
+        useful, please do us a favor and let us know how you're using it. It's
+        greatly beneficial for us to know the different ways this tool is being
+        used so we can improve it with updates. This is especially true since
+        there are times when the generators we create get used in completely
+        unanticipated ways from when we initially created them. If you have the
+        time, please send us a quick note on what you'd like to see changed or
+        added to make it better in the future. Frequently Asked Questions Can I
+        use these random paragraphs for my project? Yes! All of the random
+        paragraphs in our generator are free to use for your projects. Does a
+        computer generate these paragraphs? No! All of the paragraphs in the
+        generator are written by humans, not computers. When first building this
+        generator we thought about using computers to generate the paragraphs,
+        but they weren't very good and many times didn't make any sense at all.
+        We therefore took the time to create paragraphs specifically for this
+        generator to make it the best that we could. Can I contribute random
+        paragraphs? Yes. We're always interested in improving this generator and
+        one of the best ways to do that is to add new and interesting paragraphs
+        to the generator. If you'd like to contribute some random paragraphs,
+        please contact us. How many words are there in a paragraph? There are
+        usually about 200 words in a paragraph, but this can vary widely. Most
+        paragraphs focus on a single idea that's expressed with an introductory
+        sentence, then followed by two or more supporting sentences about the
+        idea. A short paragraph may not reach even 50 words while long
+        paragraphs can be over 400 words long, but generally speaking they tend
+        to be approximately 200 words in length.
+      </p>
+    </div>
+    <div class="main2">
+      <p class="hello1">Hello Chandni</p>
+
+      <img
+        src="../00 images/images/dora1.jpg"
+        alt="dora"
+        class="img-class img1"
+      />
+
+      <img
+        src="../00 images/images/dora2.png"
+        alt="dora"
+        class="img-class img2"
+      />
+
+      <img
+        src="../00 images/images/dora3.gif"
+        alt="dora"
+        class="img-class img3"
+      />
+
+      <img
+        src="../00 images/images/Doraemon_characters.webp"
+        alt="dora"
+        class="img-class img4"
+      />
+
+      <img
+        src="../00 images/images/girl.webp"
+        alt="dora"
+        class="img-class img5"
+      />
+
+      <img
+        src="../00 images/images/nobita.jpeg"
+        alt="dora"
+        class="img-class img6"
+      />
+
+      <img
+        src="../00 images/images/nobita2.jpg"
+        alt="dora"
+        class="img-class img7"
+      />
+
+      <img
+        src="../00 images/images/shizuka.jpeg"
+        alt="dora"
+        class="img-class img8"
+      />
+
+      <img
+        src="../00 images/images/shizuka2.jpeg"
+        alt="dora"
+        class="img-class img9"
+      />
+
+      <img
+        src="../00 images/images/dora1.jpg"
+        alt="dora"
+        class="img-class img10"
+      />
+
+      <img
+        src="../00 images/images/dora2.png"
+        alt="dora"
+        class="img-class img11"
+      />
+
+      <img
+        src="../00 images/images/dora3.gif"
+        alt="dora"
+        class="img-class img12"
+      />
+    </div>
+  </body>
+</html>
