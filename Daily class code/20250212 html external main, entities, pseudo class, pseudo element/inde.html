@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pseudo classes/elements</title>
+
+    <style>
+      ::marker {
+        background-color: rgb(84, 160, 70) !important;
+      }
+      .first-child-styling li:first-child {
+        background-color: red;
+      }
+
+      .last-child-styling li:last-child {
+        background-color: rgb(78, 3, 3);
+        color: wheat;
+      }
+
+      .specific-child-styling li:nth-child(3) {
+        background-color: rgb(53, 76, 157);
+        color: wheat;
+      }
+
+      .iron {
+        background-color: rebeccapurple;
+        color: white;
+      }
+
+      .even-child-styling li:nth-child(even) {
+        background-color: rgb(77, 49, 218);
+        color: white;
+      }
+
+      .even-child-styling li:nth-child(odd) {
+        background-color: rgb(150, 218, 49);
+        color: white;
+      }
+
+      .avenger-para::first-letter {
+        background-color: red;
+        color: white;
+        font-size: 30px;
+      }
+
+      .avenger-para::first-line {
+        background-color: rgb(84, 160, 70);
+        color: white;
+        font-size: 30px;
+      }
+
+      .avenger-para::selection {
+        background-color: rgb(84, 160, 70);
+        color: white;
+        font-size: 30px;
+      }
+    </style>
+  </head>
+  <body>
+    <a href="https://store.battlecamp.com/" target="_blank">
+      <img src="../00 images/images/dora2.png" alt="dora" width="100px" />
+    </a>
+
+    <a href="../20250212 html art/index.html" target="_blank">
+      <img src="../00 images/images/dora3.gif" alt="dora" width="100px" />
+    </a>
+
+    <a
+      href="mailto:vinay.shermauryan@gmail.com?cc=io7.chandni1@gmail.com?subject=Regardin purchasing 2 products?body=I am writing this mail to show my interest to buy iPad and iPhone from your store"
+      >Mail Me</a
+    >
+
+    <div style="width: 100%; background-color: lightcyan">
+      <ul class="first-child-styling">
+        <li>Thor</li>
+        <li>Hulk</li>
+        <li>Spiderman</li>
+        <li>Black Widow</li>
+        <li>Ironman</li>
+      </ul>
+
+      <ul class="last-child-styling">
+        <li>Thor</li>
+        <li>Hulk</li>
+        <li>Spiderman</li>
+        <li>Black Widow</li>
+        <li>Ironman</li>
+      </ul>
+
+      <ul class="specific-child-styling">
+        <li class="iron">Ironman</li>
+        <li>Thor</li>
+        <li>Black Widow</li>
+        <li>Hulk</li>
+        <li>Spiderman</li>
+      </ul>
+
+      <ul class="even-child-styling">
+        <li>Ironman</li>
+        <li>Thor</li>
+        <li>Black Widow</li>
+        <li>Hulk</li>
+        <li>Spiderman</li>
+      </ul>
+
+      <p class="avenger-para">
+        VINAY think this is that rare case when a long entry is not needed at
+        all. Since everybody already knows about the existence of the Avengers
+        movie and many have already seen it. That, honestly, is not even
+        surprising. When going to the cinema I was hoping to see a luxurious
+        blockbuster, but somewhere after the first half of the movie, I realized
+        that my expectations were exceeded significantly. To be honest, at the
+        beginning, the appointment of Joss Whedon as the director confused me.
+        Joss was more known in tv series and had no experience in this kind of
+        work. That’s maybe just based on the effect of novelty, Joss shot
+        perhaps the most entertaining movie about the super heroes on such a
+        level of spectacularity that all those done before, even the last
+        Transformers seem not to bright against it. The Avengers movie tells the
+        story about the universal evil that wants to get hold of Tesseract — an
+        inexhaustible power source to conquer new worlds. Behind all of these, a
+        dear son of the god Odin, Lokki, which has long been eager to enslave
+        the Earth, to hurt his brother Thor, who has there something to lose. At
+        the same time the head of a top-secret anti-terrorist organization, Nick
+        Fury assembles a team of the best heroes the Earth ever knew and
+        including super-soldier Captain America, demigod Thor, extravagant
+        billionaire and inventor Tony Stark, known as iron man, a huge green
+        monster Hulk and a couple of first-rate killers with impressive
+        nicknames: the Black Widow and Hawkeye. If you look at some of the
+        previous work of the Marvel Films, it becomes clear that Avengers was
+        conceived well before writing the script. As recently there was a movie
+        or two about each of the presented personages: Captain America: The
+        First Avenger, the animated series about Hawkeye, two films about Tony
+        Stark and his alter ego, and even a Thor movie, released just a year
+        ago. There was not only the movie about Black Widow.
+      </p>
+    </div>
+
+    <iframe
+      src="https://www.youtube.com/embed/4dR4KUn6YLQ"
+      width="800px"
+      height="500px"
+      title="Youtube video"
+      allowfullscreen
+      frameborder="10"
+    ></iframe>
+    <iframe
+      width="560"
+      height="315"
+      src="https://www.youtube.com/embed/4dR4KUn6YLQ?si=0uHDXNZFbR2kR4Mb"
+      title="YouTube video player"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      referrerpolicy="strict-origin-when-cross-origin"
+      allowfullscreen
+    ></iframe>
+
+    <iframe
+      width="1000px"
+      height="500px"
+      src="../20250212 html art/index.html"
+      title="Iframe Example"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      referrerpolicy="strict-origin-when-cross-origin"
+    ></iframe>
+
+    <audio controls preload="none">
+      <source src="../0assets/audio/alone.mp3" type="audio/mp3" />
+    </audio>
+
+    <video controls width="500" loop muted poster="../0assets/dora-family.jpg">
+      <source src="../0assets/video/vdo.mp4" type="video/mp4" />
+    </video>
+  </body>
+</html>
