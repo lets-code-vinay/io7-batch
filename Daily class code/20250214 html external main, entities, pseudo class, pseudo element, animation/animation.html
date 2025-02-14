@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Animation-1</title>
+    <style>
+      body {
+        height: 200vh;
+      }
+      .parent {
+        width: 50%;
+        height: 50px;
+        background-color: red;
+        border: 1px solid black;
+      }
+      .child {
+        width: 10%;
+        height: 80%;
+        background-color: blue;
+        margin: 5px auto;
+        border: 1px solid rgb(153, 15, 15);
+        /* animation-name: increase-width;
+        animation-duration: 2s;
+        animation-iteration-count: infinite;
+        animation-direction: alternate-reverse;
+        animation-timing-function: ease-in; */
+
+        animation: increase-width 2s infinite alternate ease-in;
+      }
+
+      @keyframes increase-width {
+        from {
+          width: 10%;
+        }
+        to {
+          width: 100%;
+        }
+      }
+
+      .loader-outer {
+        width: 50%;
+        height: 60px;
+        margin: 10% auto;
+        background-color: black;
+        border: 5px solid yellow;
+        border-top-left-radius: 50px;
+        border-top-right-radius: 50px;
+        border-bottom-left-radius: 50px;
+        border-bottom-right-radius: 50px;
+      }
+
+      .loader {
+        width: 5%;
+        height: 50px;
+        margin: 5px;
+        background-color: yellow;
+        border: 2px solid rgb(50, 50, 1);
+        border-top-left-radius: 60px;
+        border-top-right-radius: 60px;
+        border-bottom-left-radius: 60px;
+        border-bottom-right-radius: 60px;
+
+        animation: loader 2s infinite alternate ease-in-out;
+      }
+
+      @keyframes loader {
+        from {
+          width: 5%;
+          background-color: yellow;
+          border: 2px solid rgb(8, 8, 0);
+        }
+        to {
+          width: 98%;
+          background-color: rgb(42, 42, 1);
+          border: 2px solid rgb(242, 242, 238);
+        }
+      }
+
+      .object-parent {
+        width: 300px;
+        height: 300px;
+        background-color: aqua;
+        border: 2px groove rgb(11, 8, 103);
+        border-radius: 50%;
+        margin: auto;
+        animation: circle 2s infinite normal ease-in-out;
+        position: relative;
+      }
+
+      .object-child {
+        width: 50px;
+        height: 50px;
+        /* background-color: rgb(255, 204, 0); */
+        /* border: 2px groove rgb(11, 8, 103); */
+        /* border-radius: 50%; */
+        margin: auto;
+        position: absolute;
+        top: 12%;
+
+        animation: dora 1s infinite normal ease;
+      }
+
+      @keyframes circle {
+        from {
+          transform: rotate(0deg);
+        }
+        to {
+          transform: rotate(360deg);
+        }
+      }
+
+      @keyframes dora {
+        from {
+          transform: rotate(0deg);
+        }
+        to {
+          transform: rotate(360deg);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="parent">
+      <div class="child"></div>
+    </div>
+
+    <div class="loader-outer">
+      <div class="loader"></div>
+    </div>
+
+    <div class="object-parent">
+      <div class="object-child">
+        <img src="../00 images/images/dora2.png" width="100%" class="dora" />
+      </div>
+    </div>
+  </body>
+</html>

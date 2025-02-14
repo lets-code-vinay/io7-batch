@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML</title>
+    <style>
+      .style-by-nth-child li {
+        background-color: red;
+      }
+
+      .style-by-nth-child .specific-li {
+        background-color: yellowgreen;
+      }
+
+      .style-by-nth-child li:nth-child(3) {
+        background-color: yellow;
+      }
+
+      .style-by-f-child li:first-child {
+        background-color: red;
+      }
+
+      .style-by-l-child li:last-child {
+        background-color: black;
+        color: wheat;
+      }
+
+      .style-even-odd li:nth-child(even) {
+        background-color: aqua;
+        color: brown;
+      }
+
+      .style-even-odd li:nth-child(odd) {
+        background-color: rgb(42, 165, 155);
+        color: aqua;
+      }
+
+      .style-even-odd p:nth-child(even) {
+        background-color: rgb(2, 44, 44);
+        color: brown;
+      }
+
+      .style-even-odd p:nth-child(odd) {
+        background-color: brown;
+        color: rgb(3, 168, 168);
+      }
+
+      .paragraph::first-letter {
+        background-color: red;
+        font-size: 30px;
+        font-weight: 900;
+        color: brown;
+      }
+      .paragraph2::first-line {
+        background-color: red;
+        font-size: 30px;
+        font-weight: 900;
+        color: brown;
+      }
+
+      .paragraph2::selection {
+        background-color: rgb(165, 0, 0);
+      }
+
+      .style-by-nth-child li::marker {
+        color: red;
+      }
+
+      .style-even-odd li::marker {
+        color: lawngreen;
+      }
+
+      .chandni::before {
+        content: "i am";
+        color: red;
+        background-color: yellow;
+        font-weight: 900;
+      }
+
+      .chandni::after {
+        content: "Grewal";
+        color: red;
+        background-color: yellow;
+        font-weight: 900;
+      }
+
+      .Vinay::before {
+        content: "← 💻";
+        color: red;
+      }
+
+      .Vinay::after {
+        content: "💻";
+        color: red;
+      }
+
+      .nobi {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .nobita {
+        color: red;
+        position: relative;
+      }
+
+      .nobi-child {
+        color: black;
+      }
+
+      .nobita::before {
+        content: "";
+        width: 100%;
+        height: 5px;
+        background-image: linear-gradient(to right, black 50%, red 50%);
+        position: absolute;
+        top: -10%;
+      }
+
+      .nobita::after {
+        content: "";
+        width: 100%;
+        height: 5px;
+        background-image: linear-gradient(to left, black 50%, red 50%);
+        position: absolute;
+        bottom: -10%;
+        left: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <!--
+    1. html entities 
+    2. Pseudo class
+        :hover
+        :link
+        :active
+        :visited
+        :nth-child()
+          number
+          even
+          odd
+        :first-child()
+        :last-child
+    3. Pseudo elements
+      ::first-letter
+      ::first-line
+      ::marker
+      ::selection
+      ::after
+      ::before 
+    4. iframe
+    5. audio
+    6. video
+    7.animation
+  -->
+
+    <!--HTML entities-->
+
+    <!--
+    1. copy right
+        &copy;
+  -->
+    <div>
+      https://www.toptal.com/designers/htmlarrows/
+      <p>This website is copy righted by &copy; Vinay</p>
+      <p>Trademark by &trade;</p>
+      <p>Registered by &reg;</p>
+      <p>4 &gt; 3</p>
+      <p>3 &lt; 4</p>
+      <p>&dollar;</p>
+      <p>&incare;</p>
+      <p>Hex code -- left arrow -- &#x2190;</p>
+      <p>HTML code -- left arrow -- &#8592;</p>
+      <p>HTML Entity -- left arrow -- &larr;</p>
+
+      <p>Hex code -- Anticlockwise Open Circle Arrow -- &#x21ba;</p>
+      <p>HTML code -- Anticlockwise Open Circle Arrow --&#8634;</p>
+      <p>HTML Entity -- Anticlockwise Open Circle Arrow -- &olarr;</p>
+
+      <p>Hex code -- Indian Rupee Sign -- &#x20B9;</p>
+      <p>HTML code -- Indian Rupee Sign -- &#8377;</p>
+      <p>HTML Entity -- Indian Rupee Sign -- na</p>
+
+      <p>Hex code -- Pound Sign -- &#xa3;</p>
+      <p>HTML code -- Pound Sign -- &#163;</p>
+      <p>HTML Entity -- Pound Sign -- &pound;</p>
+
+      <p>Hex code -- Degree Sign -- &#xb0;</p>
+      <p>HTML code -- Degree Sign -- &#176;</p>
+      <p>HTML Entity -- Degree Sign -- &deg;</p>
+
+      <p>Hex code -- Square root Sign -- &#x221A;</p>
+      <p>HTML code -- Square root Sign -- &#8730;</p>
+      <p>HTML Entity -- Square root Sign -- &radic;</p>
+    </div>
+
+    <ul class="style-by-nth-child">
+      <li>Chandni</li>
+      <li>Vinay</li>
+      <li>Computer</li>
+      <li>Mike</li>
+      <li class="specific-li">Rajni</li>
+      <li>Camera</li>
+    </ul>
+
+    <ul class="style-by-f-child">
+      <li>Glasses</li>
+      <li>Wire</li>
+      <li>Lgoitec</li>
+      <li>LG</li>
+      <li>Lenovo</li>
+      <li class="specific-li">Tripod</li>
+    </ul>
+
+    <ul class="style-by-l-child">
+      <li>Graphic</li>
+      <li>Reflection</li>
+      <li>Coding</li>
+      <li>Samsung</li>
+      <li>HP</li>
+      <li class="specific-li">Curtains</li>
+    </ul>
+
+    <ul class="style-even-odd">
+      <li>Designer</li>
+      <li>Engineer</li>
+      <li>Doctor</li>
+      <li>Plumber</li>
+      <li>Astronaut</li>
+      <li>Maid</li>
+      <li>Contractor</li>
+      <li>Labour</li>
+
+      <li class="specific-li">Cleaner</li>
+    </ul>
+
+    <div class="style-even-odd">
+      <p>
+        A delightful reference for HTML Symbols, Entities and ASCII Character
+        Codes
+      </p>
+      <p>
+        HTML Arrows is a comprehensive reference website for finding HTML symbol
+        codes and entities,
+      </p>
+      <p>
+        ASCII characters and Unicode hexadecimal values to use in your web
+        design.
+      </p>
+      <p>Browse in grid or table format,</p>
+      <p>
+        search for HTML symbols, and check out Toptal’s professional designers’
+        blog for digital design insights, from detailed design tutorials to
+        in-depth coverage of new trends, techniques, and technologies.
+      </p>
+      <p>
+        Or just keep scrolling to find your favorite HTML arrow symbol, arrow
+        entity, Unicode and ASCII arrow character codes.
+      </p>
+    </div>
+
+    <p class="paragraph">
+      HTML Arrows is a comprehensive reference website for finding HTML symbol
+      codes and entities, ASCII characters and Unicode hexadecimal values to use
+      in your web design. Browse in grid or table format, search for HTML
+      symbols, and check out Toptal’s professional designers’ blog for digital
+      design insights, from detailed design tutorials to in-depth coverage of
+      new trends, techniques, and technologies. Or just keep scrolling to find
+      your favorite HTML arrow symbol, arrow entity, Unicode and ASCII arrow
+      character codes.
+    </p>
+
+    <p class="paragraph2">
+      HTML Arrows is a comprehensive reference website for finding HTML symbol
+      codes and entities, ASCII characters and Unicode hexadecimal values to use
+      in your web design. Browse in grid or table format, search for HTML
+      symbols, and check out Toptal’s professional designers’ blog for digital
+      design insights, from detailed design tutorials to in-depth coverage of
+      new trends, techniques, and technologies. Or just keep scrolling to find
+      your favorite HTML arrow symbol, arrow entity, Unicode and ASCII arrow
+      character codes.
+    </p>
+
+    <p class="chandni">Chandni</p>
+    <p class="Vinay">Vinay</p>
+
+    <div class="nobi">
+      <h1 class="nobita">Nobita <span class="nobi-child">Nobi</span></h1>
+    </div>
+
+    <iframe
+      src="../20250211 html overflow, transition, transform/index.html"
+      width="40%"
+      height="200px"
+    ></iframe>
+
+    <iframe
+      src="https://www.youtube.com/embed/jsQ89qfmR3w"
+      width="40%"
+      height="200px"
+      title="scary video"
+      allowfullscreen="true"
+      loading="lazy"
+      style="border: 5px solid black; padding: 5px; border-radius: 10px"
+    ></iframe>
+
+    <audio controls muted loop style="width: 500px; background-color: red">
+      <source src="../0assets/audio/alone.mp3" />
+    </audio>
+
+    <video
+      controls
+      style="
+        width: 50%;
+        border: 1px solid black;
+        padding: 5px;
+        border-radius: 5px;
+      "
+      poster="../00 images/images/girl.webp"
+    >
+      <source src="../0assets/video/vdo.mp4" />
+    </video>
+  </body>
+</html>

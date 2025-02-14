@@ -68,3 +68,71 @@
                 src
                 poster
                 type
+
+  <div class="nobi">
+      <h1 class="nobita">Nobita <span class="nobi-child">Nobi</span></h1>
+    </div>
+
+       .nobi {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+      .nobita {
+      color: blue;
+      width: fit-content;
+      font-size: 50px;
+      position: relative;
+    }
+
+     .nobi-child {
+      color: red;
+    }
+
+
+     .nobita::before {
+      content: "";
+      width: 100%;
+      height: 10px;
+      color: green;
+      position: absolute;
+      left: 0;
+      background-image: linear-gradient(to left, red 50%, black 50%);
+      top: -10%;
+    }
+    .nobita::after {
+      content: "";
+      background-image: linear-gradient(to right, red 50%, black 50%);
+      width: 100%;
+      height: 10px;
+      color: green;
+      position: absolute;
+      left: 0;
+      bottom: -10%;
+    }
+
+## animation
+
+animation-name: progress-bar;
+animation-duration: 2s;
+animation-iteration-count: infinite;
+animation-delay: 1s;
+animation-direction: alternate;
+/_ animation-direction: alternate-reverse; _/
+
+      animation-timing-function: ease-in;
+      /* Slow starts */
+      /* animation-timing-function: ease-out; */
+      /* Fast starts */
+
+@keyframes progress-bar {
+from {
+width: 5%;
+background-color: yellow;
+}
+to {
+width: 100%;
+background-color: blue;
+}
+}
