@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Animation</title>
+    <style>
+      .loader-outer {
+        width: 50%;
+        height: 100px;
+        background-color: red;
+        border: 1px solid black;
+        border-radius: 50px;
+      }
+      .loader-inner {
+        width: 5%;
+        height: 90%;
+        background-color: black;
+        border: 1px solid black;
+        border-radius: 50px;
+        margin: 5px;
+        animation: loader 2s infinite ease-in-out alternate;
+      }
+
+      @keyframes loader {
+        from {
+          width: 5%;
+        }
+        to {
+          width: 99%;
+          background-color: yellow;
+          border: 3px solid brown;
+        }
+      }
+
+      .solar-system-container {
+        margin-top: 10%;
+        margin-left: 10%;
+      }
+
+      .sun {
+        width: 100px;
+        height: 100px;
+        background-color: yellow;
+        border-radius: 50%;
+      }
+
+      .planet-orbit {
+        width: 300px;
+        height: 300px;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 2px solid black;
+        position: relative;
+        animation: planet-rotation 2s infinite ease;
+      }
+
+      .planet-orbit .planet {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        top: -10%;
+        left: 35%;
+      }
+
+      .satelite-orbit {
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 2px solid black;
+        position: absolute;
+        top: -18%;
+        left: 27%;
+        animation: satelite 5s infinite ease;
+      }
+
+      .moon {
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        top: -10%;
+        left: 40%;
+        background-color: green;
+      }
+
+      @keyframes planet-rotation {
+        from {
+          transform: rotate(0deg);
+        }
+        to {
+          transform: rotate(360deg);
+        }
+      }
+
+      @keyframes satelite {
+        from {
+          transform: rotate(0deg);
+        }
+        to {
+          transform: rotate(360deg);
+        }
+      }
+
+      .room {
+        width: 80%;
+        height: 500px;
+        margin: 10% auto;
+        border: 1px solid black;
+        background-color: lavender;
+        position: relative;
+      }
+
+      .spidy {
+        width: 150px;
+        animation: spider-man 5s infinite;
+        position: absolute;
+      }
+
+      @keyframes spider-man {
+        0% {
+          top: 0%;
+          left: 0%;
+          transform: rotate(360deg);
+        }
+        25% {
+          top: 0%;
+          left: 90%;
+          transform: rotate(0deg);
+        }
+        50% {
+          top: 70%;
+          left: 90%;
+          transform: rotate(360deg);
+          width: 200px;
+        }
+        75% {
+          top: 70%;
+          left: 0%;
+        }
+        100% {
+          top: 0%;
+          left: 0%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="loader-outer">
+      <div class="loader-inner"></div>
+    </div>
+
+    <div class="solar-system-container">
+      <div class="planet-orbit">
+        <div class="satelite-orbit">
+          <div class="moon"></div>
+        </div>
+        <!-- <div class="planet"></div> -->
+        <img
+          src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/22/Earth_Western_Hemisphere_transparent_background.png/600px-Earth_Western_Hemisphere_transparent_background.png?20150429101758"
+          class="planet"
+        />
+
+        <div class="sun"></div>
+      </div>
+    </div>
+
+    <div class="room">
+      <img class="spidy" src="./assets/spidy.png" />
+    </div>
+  </body>
+</html>
