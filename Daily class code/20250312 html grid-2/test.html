@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive Grid Website</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <style>
+    /* Base Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: #f8f9fa;
+      color: #333;
+      padding: 20px;
+    }
+
+    /* ✅ Grid Layout */
+    .container {
+      display: grid;
+      grid-template-areas:
+        "header header"
+        "sidebar banner"
+        "sidebar products"
+        "sidebar testimonials"
+        "sitemap contact"
+        "footer footer";
+      grid-template-columns: 250px 1fr;
+      grid-gap: 20px;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    /* ✅ Assign Grid Areas */
+    .header {
+      grid-area: header;
+      background: #222;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+    .sidebar {
+      grid-area: sidebar;
+      background: #f4f4f4;
+      padding: 20px;
+    }
+    .banner {
+      grid-area: banner;
+      background: #ddd;
+      padding: 50px;
+      text-align: center;
+    }
+    .products {
+      grid-area: products;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 10px;
+    }
+    .product {
+      background: #007bff;
+      color: white;
+      padding: 20px;
+      text-align: center;
+      border-radius: 5px;
+    }
+    .testimonials {
+      grid-area: testimonials;
+      background: #eee;
+      padding: 20px;
+    }
+    .sitemap {
+      grid-area: sitemap;
+      background: #ccc;
+      padding: 20px;
+    }
+    .contact {
+      grid-area: contact;
+      background: #ddd;
+      padding: 20px;
+    }
+    .footer {
+      grid-area: footer;
+      background: #222;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+
+    /* ✅ Responsive for Tablets (≤1024px) */
+    @media (max-width: 1024px) {
+      .container {
+        grid-template-areas:
+          "header"
+          "banner"
+          "sidebar"
+          "products"
+          "testimonials"
+          "sitemap"
+          "contact"
+          "footer";
+        grid-template-columns: 1fr;
+      }
+      .products {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    /* ✅ Responsive for Mobile Phones (≤768px) */
+    @media (max-width: 768px) {
+      .container {
+        grid-template-areas:
+          "header"
+          "banner"
+          "products"
+          "sidebar"
+          "testimonials"
+          "sitemap"
+          "contact"
+          "footer";
+      }
+      .products {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    /* ✅ Responsive for Extra Small Phones (≤480px) */
+    @media (max-width: 480px) {
+      .container {
+        grid-gap: 10px;
+      }
+      .header,
+      .footer {
+        font-size: 14px;
+        padding: 15px;
+      }
+      .products {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+  <body>
+    <div class="container">
+      <header class="header">Header</header>
+      <aside class="sidebar">Sidebar</aside>
+      <section class="banner">Banner</section>
+      <section class="products">
+        <div class="product">Product 1</div>
+        <div class="product">Product 2</div>
+        <div class="product">Product 3</div>
+        <div class="product">Product 4</div>
+        <div class="product">Product 5</div>
+        <div class="product">Product 6</div>
+      </section>
+      <section class="testimonials">Testimonials</section>
+      <section class="sitemap">Sitemap</section>
+      <section class="contact">Contact Us</section>
+      <footer class="footer">Footer</footer>
+    </div>
+  </body>
+</html>
