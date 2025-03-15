@@ -78,11 +78,10 @@ html {
     "banner-img banner-img banner-description banner-description"
     "casual-shoes casual-shoes casual-shoes casual-shoes"
     "sports-shoes sports-shoes sports-shoes sports-shoes"
-    "features features feature-image feature-image"
     "subscribe subscribe subscribe subscribe"
+    "features features feature-image feature-image"
     "sitemap-1 sitemap-2 sitemap-3 sitemap-4"
     "footer footer footer footer";
-  gap: 5px;
 }
 /* ------------  navbar start ------- */
 .navbar {
@@ -189,7 +188,7 @@ html {
 
 /* ------------  Banner starts ------- */
 .banner-parent {
-  width: 102%;
+  width: 200%;
   display: flex;
 }
 .banner-img {
@@ -259,63 +258,50 @@ html {
   background-color: #e5e5e5;
   width: 100%;
 }
-.casual-shoes-section .casual-shoes {
+.shoes {
   width: 80%;
   margin: auto;
-  padding: 2% 0;
+  padding: 2% 0 0 0;
 }
-.casual-shoes-section .casual-shoes h2 {
+.shoes h2 {
   font-size: 3rem;
   color: #232c50;
 }
-.casual-shoes-section .casual-shoes .product-container {
+.shoes .product-container {
   margin: 2% 0;
 }
-.casual-shoes-section .casual-shoes .product-container .product-shoes {
+.shoes .product-container .product-shoes {
   width: 25%;
   background-color: white;
   border-radius: 15px;
   padding: 10px;
 }
 
-.casual-shoes-section .casual-shoes .product-container .product-shoes .shoe {
+.shoes .product-container .product-shoes .shoe {
   background-color: #f1f0f0;
   height: 340px;
   border-radius: 10px;
 }
-.casual-shoes-section
-  .casual-shoes
-  .product-container
-  .product-shoes
-  .shoe
-  img {
+
+.shoes .product-container .product-shoes .shoe img {
   width: 100%;
 }
 
-.casual-shoes-section .casual-shoes .product-container .product-shoes h3 {
+.shoes .product-container .product-shoes h3 {
   margin: 2% 0;
   font-size: 2rem;
   color: #232c50;
 }
-.casual-shoes-section .casual-shoes .product-container .product-shoes p {
+.shoes .product-container .product-shoes p {
   margin: 3% 0 0 0;
   font-size: 1.5rem;
   color: #232c50;
 }
 
-.casual-shoes-section
-  .casual-shoes
-  .product-container
-  .product-shoes
-  .price-section {
+.shoes .product-container .product-shoes .price-section {
   margin-top: 3%;
 }
-.casual-shoes-section
-  .casual-shoes
-  .product-container
-  .product-shoes
-  .price-section
-  .price {
+.shoes .product-container .product-shoes .price-section .price {
   font-size: 2rem;
   color: #fe8267;
   font-weight: 800;
@@ -349,17 +335,89 @@ html {
 }
 /* ------------  casual shoes ends ------- */
 
+/* ------------  sports shoes start ------- */
 .sports-shoes-section {
   grid-area: sports-shoes;
+  background-color: #e5e5e5;
+  width: 100%;
 }
+
+.shoe-4 {
+  transform: scaleX(-1);
+  margin-top: 2%;
+}
+.shoe-5 {
+  margin-top: 8%;
+}
+.shoe-6 {
+  margin-top: 18%;
+}
+
+.shoe-4:hover {
+  transform: scaleX(-1.2) scaleY(1.2);
+  transition: 400ms ease-in-out;
+}
+
+.shoe-5:hover,
+.shoe-6:hover {
+  transform: scale(1.2);
+  transition: 400ms ease-in-out;
+}
+/* ------------  sports shoes ends ------- */
+
+/* ------------  subscribe news letter start ------- */
+.subscribe-section {
+  grid-area: subscribe;
+  width: 100%;
+  height: auto;
+  background-color: #e5e5e5;
+}
+.subscribe-section .subscribe {
+  width: 80%;
+  margin: 1% auto;
+  background-color: #fffefe;
+  border-radius: 15px;
+}
+
+.subscribe-section .subscribe h1 {
+  text-align: center;
+  padding: 2%;
+  font-size: 3rem;
+  color: #232c50;
+}
+
+.subscribe-section .subscribe .input-field {
+  width: 80%;
+  margin: auto;
+  padding: 0 0 2% 0;
+}
+.subscribe-section .subscribe .input-field input {
+  width: 80%;
+  height: 40px;
+  border: 1px solid #232c50;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  padding-left: 15px;
+  font-size: 1.5rem;
+}
+.subscribe-section .subscribe .input-field button {
+  width: 20%;
+  height: 40px;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  border-left: none;
+  border: 1px solid #232c50;
+  background-color: #fe8267;
+  color: #232c50;
+  font-size: 2rem;
+}
+/* ------------  subscribe news letter end ------- */
+
 .feature-section {
   grid-area: features;
 }
 .feature-image {
   grid-area: feature-image;
-}
-.subscribe-section {
-  grid-area: subscribe;
 }
 .site-map-1 {
   grid-area: sitemap-1;
