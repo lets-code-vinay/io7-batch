@@ -1,0 +1,181 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+  font-family: "Merriweather", serif;
+  background-color: #fff8f5;
+}
+/* --- references --
+ to use Merriweather
+  font-family: "Merriweather", serif;
+ 
+ to use Caveat Brush
+  font-family: "Caveat Brush", cursive;
+
+ to use Caveat
+   font-family: "Caveat", cursive;
+*/
+
+/* ----- global class  -----*/
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.space-between {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.orange {
+  color: #fe8267;
+}
+.dark {
+  color: #232c50;
+}
+
+.menu-font {
+  color: #908f8b;
+}
+
+.main-container {
+  width: 100%;
+  height: auto;
+  display: grid;
+  grid-template-areas:
+    "navbar navbar"
+    "banner banner"
+    "casual-shoes casual-shoes"
+    "sports-shoes sports-shoes"
+    "features feature-image"
+    "subscribe subscribe"
+    "sitemap-1 sitemap-2"
+    "footer footer";
+}
+.navbar {
+  grid-area: navbar;
+  background-color: #f9f8fa !important;
+  box-shadow: 0 2px 2px 2px #e3dcd9;
+}
+
+.navbar .header {
+  width: 80%;
+  margin: 8px auto;
+  height: 50px;
+}
+.navbar .header .logo-container {
+  width: 20%;
+  font-size: 3rem;
+}
+
+.navbar .header .logo-container .nike-logo {
+  transform: rotate(35deg);
+  width: 50px;
+  margin-top: -5px;
+}
+.navbar .header .menus {
+  width: 40%;
+  font-size: 2.5rem;
+  list-style-type: none;
+}
+.navbar .header .menus li a {
+  text-decoration: none;
+  color: #908f8b;
+  padding: 2px 5px;
+}
+.navbar .header .menus li:hover {
+  transform: scale(1.1);
+  transition: 500ms ease-in;
+}
+.navbar .header .menus li a:hover {
+  text-decoration: none;
+  color: #232c50;
+  background-color: #fe8267;
+  padding: 2px 5px;
+  border-radius: 5px;
+  transition: 500ms ease-in;
+}
+
+.navbar .header .user-setting {
+  width: 7%;
+  font-size: 3rem;
+}
+
+.navbar .header .user-setting .cart {
+  position: relative;
+  color: #fe8267;
+  width: 40px;
+  height: 40px;
+  padding: 5px;
+}
+.navbar .header .user-setting .cart:hover {
+  background-color: #f2f1ec;
+  padding: 5px;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  color: #232c50;
+}
+.navbar .header .user-setting .cart .cart-count {
+  font-size: 1rem;
+  font-weight: 600;
+  width: 15px;
+  height: 15px;
+  text-align: center;
+
+  background-color: #232c50;
+  color: #fe8267;
+  padding: 2px;
+  border-radius: 50%;
+  position: absolute;
+  top: -5px;
+  left: 30px;
+}
+
+.profile {
+  color: #232c50;
+  width: 40px;
+  height: 40px;
+  padding: 5px;
+}
+.profile:hover {
+  background-color: #f2f1ec;
+  color: #fe8267;
+  width: 40px;
+  height: 40px;
+  padding: 5px;
+  border-radius: 50%;
+}
+.banner {
+  grid-area: banner;
+}
+.casual-shoes-section {
+  grid-area: casual-shoes;
+}
+.sports-shoes-section {
+  grid-area: sports-shoes;
+}
+.feature-section {
+  grid-area: features;
+}
+.feature-image {
+  grid-area: feature-image;
+}
+.subscribe-section {
+  grid-area: subscribe;
+}
+.site-map-1 {
+  grid-area: sitemap-1;
+}
+.site-map-2 {
+  grid-area: sitemap-2;
+}
+
+.footer {
+  grid-area: footer;
+}
