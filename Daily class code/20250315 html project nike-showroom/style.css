@@ -49,14 +49,16 @@ html {
   display: grid;
   grid-template-areas:
     "navbar navbar"
-    "banner banner"
+    "banner-img banner-description"
     "casual-shoes casual-shoes"
     "sports-shoes sports-shoes"
     "features feature-image"
     "subscribe subscribe"
     "sitemap-1 sitemap-2"
     "footer footer";
+  gap: 5px;
 }
+/* ------------  navbar start ------- */
 .navbar {
   grid-area: navbar;
   background-color: #f9f8fa !important;
@@ -71,6 +73,7 @@ html {
 .navbar .header .logo-container {
   width: 20%;
   font-size: 3rem;
+  text-decoration: none;
 }
 
 .navbar .header .logo-container .nike-logo {
@@ -89,7 +92,7 @@ html {
   padding: 2px 5px;
 }
 .navbar .header .menus li:hover {
-  transform: scale(1.1);
+  transform: scale(1.05);
   transition: 500ms ease-in;
 }
 .navbar .header .menus li a:hover {
@@ -151,9 +154,19 @@ html {
   padding: 5px;
   border-radius: 50%;
 }
-.banner {
-  grid-area: banner;
+/* ------------  navbar ends ------- */
+
+/* ------------  Banner starts ------- */
+
+.banner-img {
+  grid-area: banner-img;
 }
+.banner-description {
+  grid-area: banner-description;
+}
+
+/* ------------  Banner ends ------- */
+
 .casual-shoes-section {
   grid-area: casual-shoes;
 }
