@@ -58,8 +58,8 @@ html {
   align-items: center;
   margin: 5px 0;
 }
-.buy-now span {
-  font-size: 3rem;
+.buy-now p {
+  font-size: 3rem !important;
   font-weight: 900;
 }
 
@@ -244,16 +244,111 @@ html {
   font-size: 6rem;
   margin: 10px 0;
   font-family: "Caveat", cursive;
+  color: #232c50;
 }
 .banner-description .banner-desc-section p {
   font-size: 2rem;
   margin: 10px 0;
 }
+
 /* ------------  Banner ends ------- */
 
+/* ------------  casual shoes starts ------- */
 .casual-shoes-section {
   grid-area: casual-shoes;
+  background-color: #e5e5e5;
+  width: 100%;
 }
+.casual-shoes-section .casual-shoes {
+  width: 80%;
+  margin: auto;
+  padding: 2% 0;
+}
+.casual-shoes-section .casual-shoes h2 {
+  font-size: 3rem;
+  color: #232c50;
+}
+.casual-shoes-section .casual-shoes .product-container {
+  margin: 2% 0;
+}
+.casual-shoes-section .casual-shoes .product-container .product-shoes {
+  width: 25%;
+  background-color: white;
+  border-radius: 15px;
+  padding: 10px;
+}
+
+.casual-shoes-section .casual-shoes .product-container .product-shoes .shoe {
+  background-color: #f1f0f0;
+  height: 340px;
+  border-radius: 10px;
+}
+.casual-shoes-section
+  .casual-shoes
+  .product-container
+  .product-shoes
+  .shoe
+  img {
+  width: 100%;
+}
+
+.casual-shoes-section .casual-shoes .product-container .product-shoes h3 {
+  margin: 2% 0;
+  font-size: 2rem;
+  color: #232c50;
+}
+.casual-shoes-section .casual-shoes .product-container .product-shoes p {
+  margin: 3% 0 0 0;
+  font-size: 1.5rem;
+  color: #232c50;
+}
+
+.casual-shoes-section
+  .casual-shoes
+  .product-container
+  .product-shoes
+  .price-section {
+  margin-top: 3%;
+}
+.casual-shoes-section
+  .casual-shoes
+  .product-container
+  .product-shoes
+  .price-section
+  .price {
+  font-size: 2rem;
+  color: #fe8267;
+  font-weight: 800;
+}
+
+.shoe-1:hover {
+  transform: rotate(38deg) scale(1.2);
+  transition: 500ms ease-in-out;
+  margin-top: 10%;
+}
+
+.shoe-2 {
+  transform: rotate(322deg);
+  margin-top: 20%;
+  margin-left: -7%;
+}
+.shoe-2:hover {
+  transform: rotate(360deg) scale(1.2);
+  transition: 500ms ease-in-out;
+  margin-left: 0%;
+}
+.shoe-3 {
+  transform: rotate(322deg);
+  margin-top: -12%;
+  margin-left: -12%;
+}
+.shoe-3:hover {
+  transform: rotate(360deg) scale(1.2);
+  transition: 500ms ease-in-out;
+  margin-left: 0%;
+}
+/* ------------  casual shoes ends ------- */
+
 .sports-shoes-section {
   grid-area: sports-shoes;
 }
