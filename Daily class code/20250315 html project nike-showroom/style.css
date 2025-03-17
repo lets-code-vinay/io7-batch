@@ -75,12 +75,12 @@ html {
   display: grid;
   grid-template-areas:
     "navbar navbar navbar navbar"
-    "banner-img banner-img banner-description banner-description"
+    "banner-parent banner-parent banner-parent banner-parent"
     "casual-shoes casual-shoes casual-shoes casual-shoes"
     "sports-shoes sports-shoes sports-shoes sports-shoes"
     "subscribe subscribe subscribe subscribe"
-    "features features feature-image feature-image"
-    "sitemap-1 sitemap-2 sitemap-3 sitemap-4"
+    "features features features features"
+    "sitemap sitemap sitemap sitemap"
     "footer footer footer footer";
 }
 /* ------------  navbar start ------- */
@@ -188,15 +188,18 @@ html {
 
 /* ------------  Banner starts ------- */
 .banner-parent {
-  width: 200%;
+  width: 80%;
+  margin: 2% auto 0;
   display: flex;
+  justify-content: center;
+  grid-area: banner-parent;
 }
 .banner-img {
-  grid-area: banner-img;
-  width: 100%;
+  width: 50%;
+  /* 
   display: flex;
   justify-content: end;
-  height: 500px;
+  height: 500px;*/
 }
 
 .banner-img .banner-img-section {
@@ -222,8 +225,7 @@ html {
 }
 
 .banner-description {
-  width: 100%;
-  grid-area: banner-description;
+  width: 50%;
 }
 
 .banner-description .banner-desc-section {
@@ -365,6 +367,62 @@ html {
 }
 /* ------------  sports shoes ends ------- */
 
+/* ------------  feature-section starts ------- */
+
+.feature-section {
+  grid-area: features;
+  width: 100%;
+  margin: auto;
+  padding: 2% 0;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  background-color: #e5e5e5;
+}
+.feature-section .features {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  width: 40%;
+  margin-left: 10%;
+}
+.feature-section .features .feature {
+  background-color: white;
+  border-radius: 15px;
+  display: flex;
+  justify-content: space-between;
+  margin: 2% 0;
+  padding: 2%;
+  width: 100%;
+}
+.feature-section .features .feature h4 {
+  font-family: "Caveat", cursive;
+  font-size: 4rem;
+  color: #fe8267;
+}
+.feature-section .features .feature p {
+  font-size: 2rem;
+  margin-top: 2%;
+  color: #232c50;
+}
+
+.feature-section .features .feature img {
+  width: 20%;
+}
+.feature-section .features .feature .description {
+  width: 75%;
+}
+
+.feature-section .store-image {
+  width: 50%;
+}
+
+.feature-section .store-image img {
+  height: 550px;
+  width: 100%;
+}
+/* ------------  feature-section end ------- */
+
 /* ------------  subscribe news letter start ------- */
 .subscribe-section {
   grid-area: subscribe;
@@ -413,25 +471,54 @@ html {
 }
 /* ------------  subscribe news letter end ------- */
 
-.feature-section {
-  grid-area: features;
-}
-.feature-image {
-  grid-area: feature-image;
-}
-.site-map-1 {
-  grid-area: sitemap-1;
-}
-.site-map-2 {
-  grid-area: sitemap-2;
-}
-.site-map-3 {
-  grid-area: sitemap-3;
-}
-.site-map-4 {
-  grid-area: sitemap-4;
+/* ------------  site-map starts ------- */
+.site-map {
+  grid-area: sitemap;
+  width: 80%;
+  margin: 2% auto 0;
+  align-items: flex-start !important;
 }
 
+.site-map .site-map-options {
+  list-style-type: none;
+  width: 24%;
+}
+
+.site-map .site-map-options .site-map-title {
+  font-size: 4rem;
+  font-family: "Caveat Brush", cursive;
+  color: #fe8267;
+  margin-left: -10%;
+}
+
+.site-map .site-map-options .site-map-option {
+  font-size: 2rem;
+  margin: 4% 0;
+  color: #232c50;
+  width: 100%;
+}
+.site-map .site-map-options .site-map-option:hover {
+  transform: scale(1.2);
+  font-family: "Caveat Brush", cursive;
+  cursor: pointer;
+  margin: 4% 0 0 10%;
+  width: 100%;
+  color: #fe8267;
+}
+/* ------------  site-map ends ------- */
+
+/* ------------  footer starts ------- */
 .footer {
   grid-area: footer;
+  text-align: center;
+  margin: 2% auto;
+  font-size: 2rem;
+  color: #232c50;
 }
+
+.footer span {
+  font-family: "Caveat Brush", cursive;
+  color: #fe8267;
+  font-size: 3rem;
+}
+/* ------------  footer ends ------- */
