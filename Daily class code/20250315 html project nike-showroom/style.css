@@ -88,6 +88,9 @@ html {
   grid-area: navbar;
   background-color: #f9f8fa !important;
   box-shadow: 0 2px 2px 2px #e3dcd9;
+  position: fixed;
+  z-index: 99;
+  width: 100%;
 }
 
 .navbar .header {
@@ -184,22 +187,22 @@ html {
   padding: 5px;
   border-radius: 50%;
 }
+
+.navbar .header .mobile-menus {
+  display: none;
+}
 /* ------------  navbar ends ------- */
 
 /* ------------  Banner starts ------- */
 .banner-parent {
   width: 80%;
-  margin: 2% auto 0;
+  margin: 6% auto 0;
   display: flex;
   justify-content: center;
   grid-area: banner-parent;
 }
 .banner-img {
   width: 50%;
-  /* 
-  display: flex;
-  justify-content: end;
-  height: 500px;*/
 }
 
 .banner-img .banner-img-section {
