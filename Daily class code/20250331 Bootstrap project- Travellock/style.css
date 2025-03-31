@@ -1,0 +1,188 @@
+html {
+  font-size: 62.5%;
+}
+
+* {
+  font-family: "Merriweather", serif;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey;
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #330e0e;
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #330e0e;
+}
+
+/* ----- Overriding global color -----*/
+
+.bg-primary {
+  background-color: #330e0e !important;
+}
+
+.text-light {
+  color: #ffe4c4 !important;
+}
+.text-primary {
+  color: #330e0e !important;
+}
+
+.text-light-disabled {
+  color: #c0a88a !important;
+}
+
+.btn-primary {
+  background-color: #c0a88a;
+  color: #330e0e;
+  font-family: "Redressed", cursive;
+  border: none;
+}
+.btn-primary:hover {
+  background-color: #3e2a12;
+  color: #c0a88a;
+  transition: background-color 300ms linear;
+}
+
+.btn-outline-primary {
+  border: 1px solid #330e0e;
+  font-family: "Redressed", cursive;
+
+  color: #330e0e;
+}
+
+.btn-outline-primary:hover {
+  border: 1px solid #b39a7c;
+  color: #b39a7c;
+  background-color: #330e0e;
+
+  transition: color 200ms ease-in-out;
+}
+
+/*
+Google font-family hints
+ font-family: "Caveat", cursive;
+ font-family: "Caveat Brush", cursive;
+  font-family: "Merriweather", serif;
+  font-family: "Redressed", cursive;
+  font-family: "Dancing Script", cursive;
+*/
+
+/* ------- custom CSS ------ */
+.navbar-background {
+  position: sticky;
+  top: 0px;
+  left: 0;
+  z-index: 99;
+  background-color: #330e0eda;
+}
+
+.search {
+  background-color: #662b2b;
+  color: #c0a88a !important;
+}
+.search:focus {
+  background-color: #662b2b;
+  color: #c0a88a !important;
+  border: 1px solid #c0a88a;
+}
+
+.navbar-brand {
+  font-size: 2rem;
+  font-weight: 900;
+  font-family: "Dancing Script", cursive;
+}
+
+.navbar-nav {
+  font-family: "Merriweather", serif;
+}
+.carousel-image {
+  height: 700px;
+}
+
+.carousel-caption h5,
+.carousel-caption p {
+  text-shadow: 1px 1px 2px #040000;
+  font-family: "Merriweather", serif;
+  font-size: 2rem;
+}
+.carousel-caption h5 {
+  font-size: 5rem;
+  font-family: "Dancing Script", cursive;
+  font-weight: 900;
+  text-shadow: 1px 1px 2px #c0a88a;
+}
+
+.count-parent,
+.count {
+  height: 100px;
+}
+
+.card {
+  max-height: 365px;
+}
+
+.card img {
+  height: 150px;
+}
+
+.card-text {
+  height: 100px;
+
+  overflow-y: auto;
+  margin-bottom: 5px;
+}
+
+.parallax-effect {
+  width: 100%;
+  margin: auto;
+  background-image: url("./assets/images/kedarnath.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: 0 0.78px;
+  padding: 0 5px;
+}
+
+.parallax-effect-row {
+  height: 40vh;
+  padding: 1px 4px;
+}
+
+.parallax-title,
+.parallax-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.parallax-title h3 {
+  font-size: 3rem;
+  text-shadow: 0px 0px 5px black;
+}
+
+.pricing .card-body {
+  padding: 0;
+}
+
+.pricing .card-title {
+  font-family: "Redressed", cursive;
+  font-size: 3rem;
+}
+
+.pricing .subtitle {
+  font-family: "Dancing Script", cursive;
+  font-size: 2.5rem;
+}
+
+.pricing .list-group-item {
+  font-family: "Caveat", cursive;
+}
