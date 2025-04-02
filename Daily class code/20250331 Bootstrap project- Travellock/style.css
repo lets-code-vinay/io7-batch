@@ -16,18 +16,22 @@ html {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #330e0e;
+  background: #4b1616;
   border-radius: 5px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #330e0e;
+  background: #4b1616;
 }
 
 /* ----- Overriding global color -----*/
 
 .bg-primary {
   background-color: #330e0e !important;
+}
+
+.bg-tirnary {
+  background-color: #3e2a12 !important;
 }
 
 .text-light {
@@ -51,12 +55,12 @@ html {
   background-color: #3e2a12;
   color: #c0a88a;
   transition: background-color 300ms linear;
+  box-shadow: 0px 0px 10px 2px grey;
 }
 
 .btn-outline-primary {
   border: 1px solid #330e0e;
   font-family: "Redressed", cursive;
-
   color: #330e0e;
 }
 
@@ -64,7 +68,6 @@ html {
   border: 1px solid #b39a7c;
   color: #b39a7c;
   background-color: #330e0e;
-
   transition: color 200ms ease-in-out;
 }
 
@@ -96,17 +99,29 @@ Google font-family hints
   border: 1px solid #c0a88a;
 }
 
-.navbar-brand {
+.navbar-brand p,
+.site-map-section .logo-container p {
   font-size: 2rem;
   font-weight: 900;
-  font-family: "Dancing Script", cursive;
+  font-family: "Redressed", cursive;
 }
 
 .navbar-nav {
   font-family: "Merriweather", serif;
 }
+
+.navbar-collapse {
+  padding: 0 10px;
+}
+.navbar-collapse .nav-item {
+  width: fit-content;
+}
 .carousel-image {
   height: 700px;
+}
+
+.notifications {
+  width: fit-content;
 }
 
 .carousel-caption h5,
@@ -129,6 +144,10 @@ Google font-family hints
 
 .card {
   max-height: 365px;
+  transition: box-shadow 200ms linear;
+}
+.card:hover {
+  box-shadow: 0px 0px 10px 2px grey;
 }
 
 .card img {
@@ -185,4 +204,61 @@ Google font-family hints
 
 .pricing .list-group-item {
   font-family: "Caveat", cursive;
+}
+
+.site-map-section .who-we-are .title,
+.site-map-section .services p,
+.site-map-section .about p {
+  font-family: "Redressed", cursive;
+  font-size: 3rem;
+}
+
+.social-media a {
+  width: 30px;
+  height: 30px;
+}
+
+.social-media a i:hover {
+  font-size: 3rem;
+  color: #330e0e;
+}
+
+.footer p {
+  font-family: "Redressed", cursive;
+}
+/*
++++++++++++++++++++++++++++++++++++++
+        Destination Page - starts
++++++++++++++++++++++++++++++++++++++
+*/
+.destination-container {
+  height: 80vh;
+  width: 100%;
+  background-image: url("./assets/images/goa.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/*
++++++++++++++++++++++++++++++++++++++
+        Destination Page - ends
++++++++++++++++++++++++++++++++++++++
+*/
+
+@media only screen and (max-width: 576px) {
+  html {
+    font-size: 31.75% !important;
+  }
+  .carousel-image {
+    height: 275px;
+  }
+
+  .parallax-effect {
+    height: 275px;
+  }
+
+  .parallax-effect-row {
+    height: 40%;
+  }
 }

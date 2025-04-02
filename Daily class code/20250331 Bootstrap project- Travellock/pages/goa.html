@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <title>TravelLock</title>
+    <link
+      type="image/x-icon"
+      rel="icon"
+      href="./assets/icons/travel-lock-favicon.ico"
+    />
+    <link rel="stylesheet" href="../style.css" />
+
+    <!--   Google fonts Start-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Caveat+Brush&family=Caveat:wght@400..700&family=Dancing+Script:wght@400..700&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Redressed&display=swap"
+      rel="stylesheet"
+    />
+    <!--   Google fonts ends-->
+
+    <!--   Bootstrap icons  start-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.3/font/bootstrap-icons.min.css"
+      integrity="sha512-dPXYcDub/aeb08c63jRq/k6GaKccl256JQy/AnOq7CAnEZ9FzSL9wSbcZkMp4R26vBsMLFYH4kQ67/bbV8XaCQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!--   Bootstrap icons ends-->
+    <!--   font-awesome icons start-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!--   font-awesome icons start-->
+  </head>
+  <body>
+    <div class="container-fluid">
+      <!--  -----------Header Starts------------    -->
+      <div class="row navbar-background">
+        <div class="col p-0">
+          <nav class="navbar navbar-expand-lg w-100 y">
+            <a
+              class="navbar-brand text-light d-flex justify-content-center align-items-center h-100"
+              href="../index.html"
+            >
+              <img
+                src="../assets/icons/travel-lock-2.png"
+                alt="logo"
+                width="50px"
+              />
+              <p class="fs-1 mb-0">TravelLock</p>
+            </a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0 fs-4">
+                <li class="nav-item">
+                  <a
+                    class="nav-link active text-light"
+                    aria-current="page"
+                    href="../index.html"
+                    >Home</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-light" href="#">Goa</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-light" href="#">Trips</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle text-light"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    Destinations
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li>
+                      <a class="dropdown-item" href="#">Another action</a>
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="#">Something else here</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a
+                    class="nav-link disabled text-light-disabled"
+                    aria-disabled="true"
+                    >Hotels</a
+                  >
+                </li>
+                <li class="nav-item position-relative">
+                  <a
+                    class="nav-link notifications text-light"
+                    aria-disabled="false"
+                    >Notifications</a
+                  >
+                  <span
+                    class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger"
+                  >
+                    99+
+                  </span>
+                </li>
+              </ul>
+              <form class="d-flex" role="search">
+                <input
+                  class="form-control me-2 search fs-2"
+                  type="search"
+                  placeholder="Search"
+                  aria-label="Search"
+                />
+                <button class="btn btn-primary me-2 fs-2" type="submit">
+                  Search
+                </button>
+              </form>
+            </div>
+          </nav>
+        </div>
+      </div>
+      <!--  -----------Header Starts------------    -->
+      <!-- -------------destination page ---- starts -->
+      <div class="row">
+        <div class="col destination-container overflow-y-auto">
+          <!-- travel suggestion -1  -->
+          <div
+            class="travel-suggestion-parent w-75 m-auto d-flex justify-content-between flex-wrap"
+          >
+            <div class="card mt-5" style="width: 25rem">
+              <img
+                src="../assets/images/kerala.jpg"
+                class="card-img-top"
+                alt="Kerala"
+              />
+              <div class="card-body">
+                <h5 class="card-title fs-2">Killing Kerala</h5>
+                <p class="card-text fs-5">
+                  Kerala, "God's Own Country," beckons with its serene
+                  backwaters, lush landscapes, and vibrant culture
+                </p>
+                <a href="#" class="btn btn-primary fs-3">Go Kerala</a>
+              </div>
+            </div>
+
+            <!-- travel suggestion -2  -->
+            <div class="card mt-5" style="width: 25rem">
+              <img
+                src="../assets/images/jaisalmer.jpg"
+                class="card-img-top"
+                alt="jaisalmer"
+              />
+              <div class="card-body">
+                <h5 class="card-title fs-2">Jaisalmer</h5>
+                <p class="card-text fs-5">
+                  known as the "Golden City," is a historic city in Rajasthan,
+                  India, renowned for its yellow sandstone architecture and its
+                  location in the heart of the Thar Desert
+                </p>
+                <a href="#" class="btn btn-primary fs-3">Go Jaisalmer</a>
+              </div>
+            </div>
+
+            <!-- travel suggestion -3  -->
+            <div class="card mt-5" style="width: 25rem">
+              <img
+                src="../assets/images/goa.jpg"
+                class="card-img-top"
+                alt="goa"
+              />
+              <div class="card-body">
+                <h5 class="card-title fs-2">Go Goa Gone!</h5>
+                <p class="card-text fs-5">
+                  Goa, a state on India's west coast, is known for its vibrant
+                  mix of Portuguese and Indian cultures, beautiful beaches, and
+                  rich history
+                </p>
+                <a href="#" class="btn btn-primary fs-3">Go Goa</a>
+              </div>
+            </div>
+
+            <!-- travel suggestion -4  -->
+            <div class="card mt-5" style="width: 25rem">
+              <img
+                src="../assets/images/kedarnath.jpg"
+                class="card-img-top"
+                alt="Kedarnath"
+              />
+              <div class="card-body">
+                <h5 class="card-title fs-2">Jai Ho Kedarnath</h5>
+                <p class="card-text fs-5">
+                  Kedarnath is a pilgrimage site or tirtha dedicated to the
+                  Hindu deity Shiva
+                </p>
+                <a href="#" class="btn btn-primary fs-3">Go Kedarnath</a>
+              </div>
+            </div>
+
+            <!-- travel suggestion -5  -->
+            <div class="card mt-5" style="width: 25rem">
+              <img
+                src="../assets/images/kedarnath.jpg"
+                class="card-img-top"
+                alt="Kedarnath"
+              />
+              <div class="card-body">
+                <h5 class="card-title fs-2">Jai Ho Kedarnath</h5>
+                <p class="card-text fs-5">
+                  Kedarnath is a pilgrimage site or tirtha dedicated to the
+                  Hindu deity Shiva
+                </p>
+                <a href="#" class="btn btn-primary fs-3">Go Kedarnath</a>
+              </div>
+            </div>
+
+            <!-- travel suggestion -6  -->
+            <div class="card mt-5" style="width: 25rem">
+              <img
+                src="../assets/images/kedarnath.jpg"
+                class="card-img-top"
+                alt="Kedarnath"
+              />
+              <div class="card-body">
+                <h5 class="card-title fs-2">Jai Ho Kedarnath</h5>
+                <p class="card-text fs-5">
+                  Kedarnath is a pilgrimage site or tirtha dedicated to the
+                  Hindu deity Shiva
+                </p>
+                <a href="#" class="btn btn-primary fs-3">Go Kedarnath</a>
+              </div>
+            </div>
+
+            <!-- travel suggestion -7  -->
+            <div class="card mt-5" style="width: 25rem">
+              <img
+                src="../assets/images/kedarnath.jpg"
+                class="card-img-top"
+                alt="Kedarnath"
+              />
+              <div class="card-body">
+                <h5 class="card-title fs-2">Jai Ho Kedarnath</h5>
+                <p class="card-text fs-5">
+                  Kedarnath is a pilgrimage site or tirtha dedicated to the
+                  Hindu deity Shiva
+                </p>
+                <a href="#" class="btn btn-primary fs-3">Go Kedarnath</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- -------------destination page ---- ends -->
+
+      <!--  -----------Sitemap and social media handles start------------    -->
+      <div class="row bg-primary text-light">
+        <div
+          class="col mt-5 w-100 site-map-section d-flex justify-content-evenly align-items-center flex-wrap"
+        >
+          <div class="logo-container">
+            <a
+              class="navbar-brand text-light d-flex justify-content-center align-items-center h-100"
+              href="#"
+            >
+              <img
+                src="../assets/icons/travel-lock-2.png"
+                alt="logo"
+                width="50px"
+              />
+              <p class="fs-1 mb-0">TravelLock</p>
+            </a>
+          </div>
+
+          <div class="who-we-are">
+            <p class="text-center title">Who we are?</p>
+            <p class="fs-4">
+              We are here to serve you for dream visits and destinations. We
+              also help you to decide to roam in incredible world.
+            </p>
+          </div>
+
+          <div class="services">
+            <p class="text-center">Service</p>
+
+            <ul
+              class="list-group list-group-flush overflow-y-auto w-75 m-auto"
+              style="height: 150px"
+            >
+              <li
+                class="list-group-item border-0 ms-3 fs-4 bg-primary text-light"
+              >
+                Hotel booking
+              </li>
+              <li
+                class="list-group-item border-0 ms-3 fs-4 bg-primary text-light"
+              >
+                Destination Wedding
+              </li>
+              <li
+                class="list-group-item border-0 ms-3 fs-4 bg-primary text-light"
+              >
+                Travel Package
+              </li>
+              <li
+                class="list-group-item border-0 ms-3 fs-4 bg-primary text-light"
+              >
+                Travel Insurance
+              </li>
+              <li
+                class="list-group-item border-0 ms-3 fs-4 bg-primary text-light"
+              >
+                Visa
+              </li>
+            </ul>
+          </div>
+
+          <div class="about">
+            <p class="text-center">About</p>
+
+            <ul
+              class="list-group list-group-flush overflow-y-auto w-75 m-auto"
+              style="height: 150px"
+            >
+              <li
+                class="list-group-item border-0 ms-3 fs-4 bg-primary text-light"
+              >
+                Hotel booking
+              </li>
+              <li
+                class="list-group-item border-0 ms-3 fs-4 bg-primary text-light"
+              >
+                Destination Wedding
+              </li>
+              <li
+                class="list-group-item border-0 ms-3 fs-4 bg-primary text-light"
+              >
+                Travel Package
+              </li>
+              <li
+                class="list-group-item border-0 ms-3 fs-4 bg-primary text-light"
+              >
+                Travel Insurance
+              </li>
+              <li
+                class="list-group-item border-0 ms-3 fs-4 bg-primary text-light"
+              >
+                Visa
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="row social-media bg-primary">
+        <div
+          class="col-6 bg-tirnary w-75 m-auto my-5 p-3 d-flex justify-content-center align-items-center fs-1"
+        >
+          <a
+            target="_blank"
+            href="https://www.instagram.com/vinay.shermauryan"
+            class="mx-2 text-light"
+          >
+            <i class="bi bi-instagram"></i>
+          </a>
+          <a
+            target="_blank"
+            href="https://www.youtube.com/channel/UCfbzNKfpF8W50ctD6OaVEIg"
+            class="mx-2 text-light"
+          >
+            <i class="bi bi-youtube"></i>
+          </a>
+          <a
+            target="_blank"
+            href="https://www.facebook.com/vinay.shermauryan"
+            class="mx-2 text-light"
+          >
+            <i class="fa-brands fa-square-facebook"></i>
+          </a>
+          <a
+            target="_blank"
+            href="https://www.x.com/vinay.shermauryan"
+            class="mx-2 text-light"
+          >
+            <i class="bi bi-twitter"></i>
+          </a>
+          <a
+            target="_blank"
+            href="https://www.linkedin.com/in/lets-code-vinay/"
+            class="mx-2 text-light"
+          >
+            <i class="bi bi-linkedin"></i>
+          </a>
+          <a target="_blank" href="#" class="mx-2 text-light">
+            <i class="bi bi-whatsapp"></i>
+          </a>
+        </div>
+      </div>
+      <!--  -----------Sitemap and social media handles ends------------    -->
+
+      <div class="row footer my-0 bg-tirnary text-light fs-2 p-3 text-center">
+        <div class="col-6"><p>All rights are reserved</p></div>
+        <div class="col-6">
+          <p>
+            This website is designed by IO-team with
+            <i class="fa-regular fa-heart"></i>
+          </p>
+        </div>
+      </div>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+      integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

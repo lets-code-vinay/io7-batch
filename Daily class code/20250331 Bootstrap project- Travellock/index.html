@@ -26,6 +26,25 @@
       rel="stylesheet"
     />
     <!--   Google fonts ends-->
+
+    <!--   Bootstrap icons  start-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.3/font/bootstrap-icons.min.css"
+      integrity="sha512-dPXYcDub/aeb08c63jRq/k6GaKccl256JQy/AnOq7CAnEZ9FzSL9wSbcZkMp4R26vBsMLFYH4kQ67/bbV8XaCQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!--   Bootstrap icons ends-->
+    <!--   font-awesome icons start-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!--   font-awesome icons start-->
   </head>
   <body>
     <div class="container-fluid">
@@ -33,14 +52,17 @@
       <div class="row navbar-background">
         <div class="col p-0">
           <nav class="navbar navbar-expand-lg w-100 y">
-            <a class="navbar-brand text-light" href="#">
+            <a
+              class="navbar-brand text-light d-flex justify-content-center align-items-center h-100"
+              href="#"
+            >
               <img
                 src="./assets/icons/travel-lock-2.png"
                 alt="logo"
                 width="50px"
               />
-              TravelLock</a
-            >
+              <p class="fs-1 mb-0">TravelLock</p>
+            </a>
             <button
               class="navbar-toggler"
               type="button"
@@ -63,7 +85,10 @@
                   >
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link text-light" href="#">Link</a>
+                  <a class="nav-link text-light" href="./pages/goa.html">Goa</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-light" href="#">Trips</a>
                 </li>
                 <li class="nav-item dropdown">
                   <a
@@ -73,7 +98,7 @@
                     data-bs-toggle="dropdown"
                     aria-expanded="false"
                   >
-                    Dropdown
+                    Destinations
                   </a>
                   <ul class="dropdown-menu">
                     <li><a class="dropdown-item" href="#">Action</a></li>
@@ -90,8 +115,20 @@
                   <a
                     class="nav-link disabled text-light-disabled"
                     aria-disabled="true"
-                    >Disabled</a
+                    >Hotels</a
                   >
+                </li>
+                <li class="nav-item position-relative">
+                  <a
+                    class="nav-link notifications text-light"
+                    aria-disabled="false"
+                    >Notifications</a
+                  >
+                  <span
+                    class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger"
+                  >
+                    99+
+                  </span>
                 </li>
               </ul>
               <form class="d-flex" role="search">
@@ -267,7 +304,7 @@
 
           <!-- travel suggestion -1  -->
           <div
-            class="travel-suggestion-parent w-75 m-auto d-flex justify-content-between"
+            class="travel-suggestion-parent w-75 m-auto d-flex justify-content-between flex-wrap"
           >
             <div class="card mt-5" style="width: 25rem">
               <img
@@ -360,7 +397,6 @@
       <!--  -----------Pricing starts------------    -->
       <div class="row">
         <div class="col">
-          <hr />
           <p class="w-75 m-auto fs-1 my-3">Pricing</p>
           <p class="w-75 m-auto fs-4 my-3">
             Quickly build an effective pricing table for your potential
@@ -369,7 +405,7 @@
           </p>
 
           <div
-            class="travel-suggestion-parent w-75 m-auto d-flex justify-content-between"
+            class="travel-suggestion-parent w-75 m-auto d-flex justify-content-between flex-wrap"
           >
             <!-- pricing -1  -->
             <div class="pricing card mt-5" style="width: 25rem">
@@ -610,6 +646,160 @@
         </div>
       </div>
       <!--  -----------Pricing ends------------    -->
+      <!--  -----------Sitemap and social media handles start------------    -->
+      <div class="row bg-primary text-light">
+        <div
+          class="col mt-5 w-100 site-map-section d-flex justify-content-evenly align-items-center flex-wrap"
+        >
+          <div class="logo-container">
+            <a
+              class="navbar-brand text-light d-flex justify-content-center align-items-center h-100"
+              href="#"
+            >
+              <img
+                src="./assets/icons/travel-lock-2.png"
+                alt="logo"
+                width="50px"
+              />
+              <p class="fs-1 mb-0">TravelLock</p>
+            </a>
+          </div>
+
+          <div class="who-we-are">
+            <p class="text-center title">Who we are?</p>
+            <p class="fs-4">
+              We are here to serve you for dream visits and destinations. We
+              also help you to decide to roam in incredible world.
+            </p>
+          </div>
+
+          <div class="services">
+            <p class="text-center">Service</p>
+
+            <ul
+              class="list-group list-group-flush overflow-y-auto w-75 m-auto"
+              style="height: 150px"
+            >
+              <li
+                class="list-group-item border-0 ms-3 fs-4 bg-primary text-light"
+              >
+                Hotel booking
+              </li>
+              <li
+                class="list-group-item border-0 ms-3 fs-4 bg-primary text-light"
+              >
+                Destination Wedding
+              </li>
+              <li
+                class="list-group-item border-0 ms-3 fs-4 bg-primary text-light"
+              >
+                Travel Package
+              </li>
+              <li
+                class="list-group-item border-0 ms-3 fs-4 bg-primary text-light"
+              >
+                Travel Insurance
+              </li>
+              <li
+                class="list-group-item border-0 ms-3 fs-4 bg-primary text-light"
+              >
+                Visa
+              </li>
+            </ul>
+          </div>
+
+          <div class="about">
+            <p class="text-center">About</p>
+
+            <ul
+              class="list-group list-group-flush overflow-y-auto w-75 m-auto"
+              style="height: 150px"
+            >
+              <li
+                class="list-group-item border-0 ms-3 fs-4 bg-primary text-light"
+              >
+                Hotel booking
+              </li>
+              <li
+                class="list-group-item border-0 ms-3 fs-4 bg-primary text-light"
+              >
+                Destination Wedding
+              </li>
+              <li
+                class="list-group-item border-0 ms-3 fs-4 bg-primary text-light"
+              >
+                Travel Package
+              </li>
+              <li
+                class="list-group-item border-0 ms-3 fs-4 bg-primary text-light"
+              >
+                Travel Insurance
+              </li>
+              <li
+                class="list-group-item border-0 ms-3 fs-4 bg-primary text-light"
+              >
+                Visa
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="row social-media bg-primary">
+        <div
+          class="col-6 bg-tirnary w-75 m-auto my-5 p-3 d-flex justify-content-center align-items-center fs-1"
+        >
+          <a
+            target="_blank"
+            href="https://www.instagram.com/vinay.shermauryan"
+            class="mx-2 text-light"
+          >
+            <i class="bi bi-instagram"></i>
+          </a>
+          <a
+            target="_blank"
+            href="https://www.youtube.com/channel/UCfbzNKfpF8W50ctD6OaVEIg"
+            class="mx-2 text-light"
+          >
+            <i class="bi bi-youtube"></i>
+          </a>
+          <a
+            target="_blank"
+            href="https://www.facebook.com/vinay.shermauryan"
+            class="mx-2 text-light"
+          >
+            <i class="fa-brands fa-square-facebook"></i>
+          </a>
+          <a
+            target="_blank"
+            href="https://www.x.com/vinay.shermauryan"
+            class="mx-2 text-light"
+          >
+            <i class="bi bi-twitter"></i>
+          </a>
+          <a
+            target="_blank"
+            href="https://www.linkedin.com/in/lets-code-vinay/"
+            class="mx-2 text-light"
+          >
+            <i class="bi bi-linkedin"></i>
+          </a>
+          <a target="_blank" href="#" class="mx-2 text-light">
+            <i class="bi bi-whatsapp"></i>
+          </a>
+        </div>
+      </div>
+      <!--  -----------Sitemap and social media handles ends------------    -->
+
+      <div class="row footer my-0 bg-tirnary text-light fs-2 p-3 text-center">
+        <div class="col-6"><p>All rights are reserved</p></div>
+        <div class="col-6">
+          <p>
+            This website is designed by IO-team with
+            <i class="fa-regular fa-heart"></i>
+          </p>
+        </div>
+      </div>
     </div>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
