@@ -329,13 +329,15 @@ const fees2 = "30red";
 
     console.log("using isNaN- fees---> ", isNaN(fees));
     console.log("using isNaN- fees2---> ", isNaN(fees2));
-    console.log("using isNaN- fees2---> ", isNaN("D10"));
+    console.log("using isNaN- ---> ", isNaN("D10"));
 
 23. Method to check if datatype is number using Number.isInteger()
     console.log("using Number.isInteger- fees---> ", Number.isInteger(fees));
     console.log("using Number.isInteger- fees2---> ", Number.isInteger(fees2));
 
 24. Math Library
+
+    ### https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math
 
     const num1 = 121;
 
@@ -432,3 +434,199 @@ Your chosen number of paragraphs will instantly appear.`;
   .map()
   .find()
   .filter()
+
+27. String.length
+
+- 1.  To check the counts of characters in string
+
+console.log("string length-1-->", para.length);
+console.log("string.length --2-->", oldPara.length);
+
+28. String.toUpperCase()
+
+- 1.  Convert all the letters to uppercase
+      console.log("to uppercase 1--->", para.toUpperCase());
+
+29. - String.toLowerCase()
+
+- 1.  Convert all the letters to lowercase
+      console.log("to lowercase 1--->", para.toLowerCase());
+
+- let isRaining = true;
+
+- let percentage = 500;
+
+30. Convert any datatype to string
+
+- 1. String()
+
+- 2.  abc.toString();
+      console.log(
+      "Convert to string using String()--",
+      isRaining,
+      String(isRaining),
+      percentage,
+      String(percentage)
+      );
+
+- console.log(
+  "Convert to string using toString()--",
+  isRaining,
+  isRaining.toString(),
+  percentage,
+  percentage.toString()
+  );
+
+- para = 'He said, "He is Coolie"';
+
+31. String.includes()
+
+- To check if any given string existing or not
+  console.log("--includes", oldPara.includes("para"));
+
+32. String.replace()
+
+- To replace any existed values with another value
+
+- console.log("---replace-- 1--", para.replace("is", "was"));
+  console.log("---replace-- 2--", para.replace("coolie", "Doctor"));
+  console.log("---replace-- 3--", para.replace("He", "She"));
+
+33. String.replaceAll()
+
+- To replace all existed values with another value
+
+- console.log("---replaceAll-- 1--", para.replaceAll("He", "She"));
+
+- console.log("--replaceAll---2--", para.replaceAll(" ", "-"));
+
+34. String.split()
+
+- console.log("--split --1", para.split(" "));
+  console.log("--split --2", para.split('"'));
+  console.log("--split --3", para.split(""));
+
+- let strToSplit = para.split("");
+  console.log("--strToSplit", strToSplit);
+  let reversedStr = strToSplit.reverse();
+  console.log("--reversedStr", reversedStr);
+
+- let joinedStr = reversedStr.join("");
+  console.log("--joinedStr", joinedStr);
+
+35. To reverse any string
+
+- 1.  Split - split by empty space ("")
+- 2.  reverse -
+- 3.  join- join by empty space('')
+
+- let wordSplit = para.split(" ");
+  console.log("--wordSplit", wordSplit);
+  let wordRev = wordSplit.reverse();
+  console.log("--wordRev", wordRev);
+  let wordRevJoin = wordRev.join(" ");
+  console.log("--wordRevJoin", wordRevJoin);
+
+36. To find any place value of any character
+
+- 1.  using String[index] schoolName[5]
+- 2.  using .at(5)
+      let schoolName =
+      "Shaheed JAGSIR SINGH Govt. Senior Secondary SMART School BOHA (MANSA) ";
+      console.log("find character on place --", schoolName.length, schoolName[70]);
+      console.log(
+      "find character on place using at() --",
+      schoolName.length,
+      schoolName.at(5)
+      );
+
+37. Find character code
+
+- console.log("fromCharCode-=-", String.fromCharCode(86));
+  console.log("fromCharCode-=-", String.fromCharCode(73));
+  console.log("fromCharCode-=-", String.fromCharCode(78));
+  console.log("fromCharCode-=-", String.fromCharCode(65));
+  console.log("fromCharCode-=-", String.fromCharCode(89));
+
+38. Find multiple character code
+
+- console.log("fromCodePoint-=-", String.fromCodePoint(86, 73, 78, 65, 89));
+
+- let studentName = "Chahat";
+  console.log("concat 1 --", studentName + " " + "reads in" + " " + schoolName);
+  console.log(
+  "concat 2 --",
+  studentName,
+  "reads in",
+  schoolName,
+  ". there",
+  para.replaceAll("He", "She")
+  );
+  console.log(
+  "concat 3 --",
+  `${studentName} reads in ${schoolName}. there ${para.replaceAll("He", "She")}`
+  );
+
+- let thor = "The thunder God-Thor";
+  let hulk = "The Incredible Hulk";
+  let ironMan = "Invincible Iron-Man";
+
+- console.log(
+  "concat 2.1--",
+  thor + ", " + hulk + " " + "and" + " " + ironMan + " " + "are my fav avengers"
+  );
+
+- console.log(
+  "concat 2.2--- ",
+  thor,
+  ",",
+  hulk,
+  "and",
+  ironMan,
+  "are my fav avengers."
+  );
+
+- console.log(
+  "concat 2.3--",
+  `${thor}, ${hulk} and ${ironMan} are my fav avengers`
+  );
+
+- console.log("includes--", ironMan.includes("M"));
+  console.log("search()--", ironMan.search("k"));
+
+- console.log("repeat()--", ironMan.repeat(14));
+
+- console.log("indexOf--", ironMan.indexOf(`I`));
+
+- console.log("lastIndexOf--", ironMan.lastIndexOf(`V`));
+  console.log("startsWith--", ironMan.startsWith(`Invinay`));
+
+- console.log("endsWith--", ironMan.endsWith(`man`));
+
+- let slicedSchoolName = schoolName.slice(10);
+  let slicedSchoolName2 = schoolName.slice(10, 20);
+  let slicedSchoolName3 = schoolName.slice(-12);
+
+- console.log("slicedSchoolName--", slicedSchoolName);
+  console.log("slicedSchoolName2--", slicedSchoolName2);
+  console.log("slicedSchoolName3--", slicedSchoolName3);
+
+- let subStrSchoolName = schoolName.substr(10, 20);
+  console.log("subStrSchoolName--", subStrSchoolName);
+
+- let subStringSchoolName = schoolName.substring(10, 30);
+  console.log("subStringSchoolName--", subStringSchoolName);
+
+- let spider = " spider-man ";
+
+- console.log(";spider", spider.trim());
+  console.log(";spider trimEnd", spider.trimEnd());
+  console.log(";spider trimStart", spider.trimStart());
+
+- let ave1 = "Ultron";
+
+- console.log("padStart--", ave1.padStart(10, "$"));
+  console.log("padStart 1--", ave1.padStart(ave1.length + 1, "%"));
+
+- console.log("padEnd--", ave1.padEnd(10, "$"));
+  console.log("padEnd 1--", ave1.padEnd(ave1.length + 10, "%"));
