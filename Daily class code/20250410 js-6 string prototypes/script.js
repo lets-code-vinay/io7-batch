@@ -134,7 +134,7 @@ console.log(
  * use to join Array
  */
 
-console.log("print join() --1--", [1, 2, 3, 4, 5, 6].join(""));
+console.log("print join() --1--", [1, 2, 3, 4, 5, 6].join("-")); // 1-2-3-4-5-6
 console.log("print join() --2--", ["this", "is", "js"].join(""));
 
 const splittedString = dummyString.split(" "); // 'this is a string' --> ['this', 'is', 'a', 'string']
