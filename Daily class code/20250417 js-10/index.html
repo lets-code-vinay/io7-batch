@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>20250416 js-10</title>
+  </head>
+  <style>
+    table,
+    tr,
+    th,
+    td {
+      border: 1px solid black;
+      border-collapse: collapse;
+      width: 50%;
+    }
+  </style>
+  <body>
+    <h1>20250416 js-10</h1>
+
+    <h1>Truth Table</h1>
+
+    <table>
+      <thead>
+        <tr>
+          <th></th>
+
+          <th>NOT</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td id="p1">0</td>
+
+          <td id="notp1">1</td>
+        </tr>
+        <tr>
+          <td id="notp2">1</td>
+          <td id="notp1">0</td>
+        </tr>
+      </tbody>
+    </table>
+    <br /><br />
+    <hr />
+
+    <table>
+      <thead>
+        <tr>
+          <th></th>
+          <th></th>
+          <th>And</th>
+          <th>OR</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td id="p1">1</td>
+          <td id="q1">1</td>
+          <td id="xor1">1</td>
+          <td id="notp1">1</td>
+        </tr>
+        <tr>
+          <td id="p2">1</td>
+          <td id="q2">0</td>
+          <td id="xor2">0</td>
+          <td id="notp2">1</td>
+        </tr>
+        <tr>
+          <td id="p3">0</td>
+          <td id="q3">1</td>
+          <td id="xor3">0</td>
+          <td id="notp3">1</td>
+        </tr>
+        <tr>
+          <td id="p4">0</td>
+          <td id="q4">0</td>
+          <td id="xor4">0</td>
+          <td id="notp4">0</td>
+        </tr>
+      </tbody>
+    </table>
+    <br /><br />
+    <hr />
+    <table>
+      <thead>
+        <tr>
+          <th></th>
+
+          <th>NOT</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td id="p1">False</td>
+
+          <td id="notp1">True</td>
+        </tr>
+        <tr>
+          <td id="notp2">True</td>
+          <td id="notp1">False</td>
+        </tr>
+      </tbody>
+    </table>
+    <br /><br />
+    <hr />
+    <table>
+      <thead>
+        <tr>
+          <th></th>
+          <th></th>
+          <th>And</th>
+          <th>OR</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td id="p1">true</td>
+          <td id="q1">true</td>
+          <td id="xor1">true</td>
+          <td id="notp1">true</td>
+        </tr>
+        <tr>
+          <td id="p2">true</td>
+          <td id="q2">false</td>
+          <td id="xor2">false</td>
+          <td id="notp2">true</td>
+        </tr>
+        <tr>
+          <td id="p3">false</td>
+          <td id="q3">true</td>
+          <td id="xor3">false</td>
+          <td id="notp3">true</td>
+        </tr>
+        <tr>
+          <td id="p4">false</td>
+          <td id="q4">false</td>
+          <td id="xor4">false</td>
+          <td id="notp4">false</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
