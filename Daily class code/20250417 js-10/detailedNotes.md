@@ -198,9 +198,241 @@ console.log("--comparison two values--20--", false === false); // true
 console.log("--comparison two values--21--", false === ""); // false
 ```
 
+### 3.3 Not Equal (`!=`) and Strict Not Equal (`!==`)
+
+#### 3.3.1 Not Equal (`!=`)
+
+- Compares two values for inequality, ignoring data type.
+- Returns `true` if the values are not equal, otherwise `false`.
+
+#### 3.3.2 Strict Not Equal (`!==`)
+
+- Compares two values for inequality, considering data type.
+- Returns `true` if the values or data types are not equal, otherwise `false`.
+
+#### Examples:
+
+```javascript
+console.log("--comparison not equal two values--1--", 50 != 51); // true
+console.log("--comparison not equal two values--2--", 50 != 50); // false
+console.log("--comparison not equal two values--3--", 50 != "50"); // false
+console.log("--comparison not equal two values--4--", "vinay" != "50"); // true
+console.log("--comparison not equal two values--5--", "vinay" != "vinay"); // false
+console.log("--comparison not equal two values--6--", "vinay" != "vInay"); // true
+console.log("--comparison not equal two values--7--", 152 != "152"); // false
+console.log("--comparison not equal two values--8--", "152" != "152"); // false
+console.log("--comparison not equal two values--9--", 152 !== "152"); // true
+console.log("--comparison not equal two values--10--", true != 1); // false
+console.log("--comparison not equal two values--11--", true !== 1); // true
+console.log("--comparison not equal two values--12--", true !== false); // true
+console.log("--comparison not equal two values--13--", 10 + 20 == "10" + "20"); // false
+console.log("--comparison not equal two values--14--", 10 + 20 == "10+20"); // false
+console.log("--comparison not equal two values--15--", 10 + 20 !== "10+20"); // true
+```
+
+---
+
+### 3.4 Greater Than (`>`) and Greater Than or Equal To (`>=`)
+
+#### 3.4.1 Greater Than (`>`)
+
+- Compares two values to check if the left-hand side is greater than the right-hand side.
+- Returns `true` if the left-hand side is greater, otherwise `false`.
+
+#### 3.4.2 Greater Than or Equal To (`>=`)
+
+- Compares two values to check if the left-hand side is greater than or equal to the right-hand side.
+- Returns `true` if the left-hand side is greater or equal, otherwise `false`.
+
+#### Examples:
+
+```javascript
+// Greater Than
+console.log("--comparison greater than --1--", 20 > 21); // false
+console.log("--comparison greater than --2--", 20 > 20); // false
+console.log("--comparison greater than --3--", 20 > "20"); // false
+console.log("--comparison greater than --4--", 21 > "20"); // true
+console.log("--comparison greater than --5--", 21 > "20Street"); // false
+console.log("--comparison greater than --6--", "a" > "b"); // false
+console.log("--comparison greater than --7--", "b" > "a"); // true
+console.log("--comparison greater than --8--", "chandni" > "vinay"); // false
+console.log("--comparison greater than --9--", "vinay" > "chandni"); // true
+console.log("--comparison greater than --10--", "vinay" > "vijay"); // true
+console.log("--comparison greater than --11--", 10 + 20 > 31); // false
+console.log("--comparison greater than --12--", 10 + 20 > 31 - 10); // true
+console.log("--comparison greater than --13--", 100 > 12 > 5); // false
+
+// Greater Than or Equal To
+console.log("--comparison greater than equal to--1--", 10 >= 9); // true
+console.log("--comparison greater than equal to--2--", 10 >= 10); // true
+console.log("--comparison greater than equal to--3--", "vinay" >= "vinay"); // true
+console.log("--comparison greater than equal to--4--", "vinay" >= "vijay"); // true
+console.log("--comparison greater than equal to--5--", "vijay" >= "vinay"); // false
+console.log("--comparison greater than equal to--6--", true >= true); // true
+console.log("--comparison greater than equal to--7--", 1 >= true); // true
+console.log("--comparison greater than equal to--8--", 1 >= "1"); // true
+console.log("--comparison greater than equal to--9--", false >= 0); // true
+console.log("--comparison greater than equal to--10--", 10 + 20 >= 10 + 19); // true
+console.log(
+  "--comparison greater than equal to--11--",
+  10 + 20 >= 10 + 19 > 10 + 21
+); // false
+console.log(
+  "--comparison greater than equal to--12--",
+  10 + 20 >= 10 + 19 == 60 - 1 > 10
+); // true
+```
+
+---
+
+### 3.5 Less Than (`<`) and Less Than or Equal To (`<=`)
+
+#### 3.5.1 Less Than (`<`)
+
+- Compares two values to check if the left-hand side is less than the right-hand side.
+- Returns `true` if the left-hand side is less, otherwise `false`.
+
+#### 3.5.2 Less Than or Equal To (`<=`)
+
+- Compares two values to check if the left-hand side is less than or equal to the right-hand side.
+- Returns `true` if the left-hand side is less or equal, otherwise `false`.
+
+#### Examples:
+
+```javascript
+// Less Than
+console.log("--comparison less than --1--", 10 < 9); // false
+console.log("--comparison less than --2--", 10 < 10); // false
+console.log("--comparison less than --3--", "vinay" < "vinay"); // false
+console.log("--comparison less than --4--", "vinay" < "vijay"); // false
+console.log("--comparison less than --5--", "vijay" < "vinay"); // true
+console.log("--comparison less than --6--", true < true); // false
+console.log("--comparison less than --7--", 1 < true); // false
+console.log("--comparison less than --8--", 1 < "1"); // false
+console.log("--comparison less than --9--", false < 0); // false
+
+// Less Than or Equal To
+console.log("--comparison less than equal to--1--", 10 <= 9); // false
+console.log("--comparison less than equal to--2--", 10 <= 10); // true
+console.log("--comparison less than equal to--3--", "vinay" <= "vinay"); // true
+console.log("--comparison less than equal to--4--", "vinay" <= "vijay"); // false
+console.log("--comparison less than equal to--5--", "vijay" <= "vinay"); // true
+console.log("--comparison less than equal to--6--", true <= true); // true
+console.log("--comparison less than equal to--7--", 1 <= true); // true
+console.log("--comparison less than equal to--8--", 1 <= "1"); // true
+console.log("--comparison less than equal to--9--", false <= 0); // true
+```
+
 ## 4. Logical Operator
 
+Logical operators are used to combine or invert boolean expressions. Below are examples and explanations of the three main logical operators: `&&` (AND), `||` (OR), and `!` (NOT).
+
+### 4.1 Truth Table for Logical Operators
+
+Logical operators are used to combine two or more conditions. Below is a truth table for the common logical operators.
+
+#### 4.1.1 Logical AND (`&&`)
+
+| Operand 1 | Operand 2 | Result (`Operand 1 && Operand 2`) |
+| --------- | --------- | --------------------------------- |
+| `true`    | `true`    | `true`                            |
+| `true`    | `false`   | `false`                           |
+| `false`   | `true`    | `false`                           |
+| `false`   | `false`   | `false`                           |
+
+#### 4.1.2 Logical OR (`||`)
+
+| Operand 1 | Operand 2 | Result (`Operand 1 |     | Operand 2`) |
+| --------- | --------- | ------------------ | --- | ----------- |
+| `true`    | `true`    | `true`             |
+| `true`    | `false`   | `true`             |
+| `false`   | `true`    | `true`             |
+| `false`   | `false`   | `false`            |
+
+#### 4.1.3 Logical NOT (`!`)
+
+| Operand | Result (`!Operand`) |
+| ------- | ------------------- |
+| `true`  | `false`             |
+| `false` | `true`              |
+
+---
+
+### 4.2 Logical NOT (`!`)
+
+The `!` operator inverts the boolean value of its operand. If the operand is `true`, it returns `false`, and vice versa.
+
+```javascript
+console.log("logical not--1--", !true); // false
+console.log("logical not--2--", !false); // true
+console.log("logical not--3--", !"chandni"); // false (non-empty strings are truthy)
+console.log("logical not--4--", !Boolean("chandni")); // !true --> false
+console.log("logical not--5--", !Boolean("null")); // !true --> false (non-empty strings are truthy)
+console.log("logical not--6--", !Boolean(null)); // !false --> true (null is falsy)
+console.log("logical not--7--", !0); // true (0 is falsy)
+```
+
+---
+
+#### 4.3. Logical AND (`&&`)
+
+The `&&` operator returns `true` if **both** operands are `true`. Otherwise, it returns `false`. If the first operand is falsy, it short-circuits and returns the first operand.
+
+```javascript
+console.log("logical AND--1--", true && true); // true
+console.log("logical AND--2--", true && false); // false
+console.log("logical AND--3--", false && false); // false
+console.log("logical AND--4--", false && true); // false
+console.log("logical AND--5--", !false && true); // true && true -> true
+console.log("logical AND--6--", null && true); // null (short-circuits at null)
+console.log("logical AND--7--", Boolean(null) && true); // false
+console.log("logical AND--8--", undefined && true); // undefined (short-circuits at undefined)
+console.log("logical AND--9--", !Boolean(undefined) && true); // !false && true ==> true && true --> true
+```
+
+---
+
+#### 4.4 Logical OR (`||`)
+
+The `||` operator returns `true` if **at least one** operand is `true`. If the first operand is truthy, it short-circuits and returns the first operand.
+
+```javascript
+console.log("logical OR--1--", true || true); // true
+console.log("logical OR--2--", true || false); // true
+console.log("logical OR--3--", false || false); // false
+console.log("logical OR--4--", false || true); // true
+console.log("logical OR--5--", !false || true); // true
+console.log("logical OR--6--", null || true); // true (short-circuits at true)
+console.log("logical OR--7--", Boolean(null) || true); // true
+console.log("logical OR--8--", undefined || true); // true (short-circuits at true)
+console.log("logical OR--9--", !Boolean(undefined) || true); // true
+```
+
+---
+
+### 4.5 Key Points:
+
+1. **Logical NOT (`!`)**: Inverts the boolean value of its operand.
+2. **Logical AND (`&&`)**: Returns `true` only if both operands are `true`. Short-circuits if the first operand is falsy.
+3. **Logical OR (`||`)**: Returns `true` if at least one operand is `true`. Short-circuits if the first operand is truthy.
+
+---
+
 ## 5. Bitwise Operator
+
+### No need to learn this operator in detail. Just know that it is used to perform bitwise operations on binary numbers.
+
+- Bitwise operators are used to perform operations on binary representations of numbers.
+- They operate on the binary digits (bits) of numbers and return a new number based on the operation performed.
+- Bitwise operators are not commonly used in modern JavaScript programming, but they can be useful in certain scenarios, such as low-level programming or performance optimization.
+- The following are the most commonly used bitwise operators:
+  1. **Bitwise AND (`&`)**: Compares each bit of two numbers and returns a new number with bits set to `1` where both bits are `1`.
+  2. **Bitwise OR (`|`)**: Compares each bit of two numbers and returns a new number with bits set to `1` where at least one bit is `1`.
+  3. **Bitwise XOR (`^`)**: Compares each bit of two numbers and returns a new number with bits set to `1` where the bits are different.
+  4. **Bitwise NOT (`~`)**: Inverts the bits of a number, changing `0`s to `1`s and `1`s to `0`s.
+  5. **Left Shift (`<<`)**: Shifts the bits of a number to the left by a specified number of positions, filling the rightmost bits with `0`s.
+  6. **Right Shift (`>>`)**: Shifts the bits of a number to the right by a specified number of positions, preserving the sign bit (the leftmost bit).
+  7. **Zero-fill Right Shift (`>>>`)**: Shifts the bits of a number to the right by a specified number of positions, filling the leftmost bits with `0`s.
 
 ## 6. Ternary Operator
 
