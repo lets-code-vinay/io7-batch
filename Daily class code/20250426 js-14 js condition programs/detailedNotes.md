@@ -877,10 +877,6 @@ Decision making in JavaScript involves executing different blocks of code based 
 3. **`if-else if` Ladder**: Tests multiple conditions sequentially.
 4. **`switch` Statement**: Evaluates an expression and executes code based on matching cases.
 
-### Flow Chart for Decision Making:
-
-![Flowchart Example: Calculate Profit and Loss](../../flowchart-example-calculate-profit-and-loss.webp)
-
 ### Example:
 
 ```javascript
@@ -895,13 +891,300 @@ if (age >= 18) {
 
 This example checks if the `age` is 18 or above and prints a message accordingly.
 
+## Flow Chart for Decision Making:
+
+![Flowchart Example: Calculate Profit and Loss](../../flowchart-example-calculate-profit-and-loss.webp)
+
 # complex or nested decision making
+
+- complex decision making is when we have multiple conditions to check and execute different blocks of code based on those conditions.
+
+- A company insures its drivers in the following
+  cases:
+  − If the driver is married.
+  − If the driver is unmarried, male & above 30 years of age.
+  − If the driver is unmarried, female & above 25 years of age.
+  In all other cases the driver is not insured. If the marital status, sex
+  and age of the driver are the inputs, write a program to determine
+  whether the driver is to be insured or not
+
+- the following code is an example of complex decision making using if-else statements.
+- here added validations for employee insurance eligibility based on various conditions such as
+- age
+- marital status
+- gender
+- the code checks if the employee is married or not and if not, it checks the age
+
+```js
+const employeeInsurance = ({
+  empName = "",
+  isMarried = false,
+  age = 0,
+  gender = "",
+}) => {
+  console.log("-----------------------------", gender);
+
+  // validations
+  // 1. empName , age, gender must be entered
+  if (!Boolean(empName)) {
+    // empName must be entered
+    console.warn(`Please enter a valid name`);
+    return;
+  } else if (!age || age <= 0) {
+    // age must be 18+
+    console.warn(`${age} is nat a valid age.`);
+    return;
+  } else if (age <= 18) {
+    // age must be 18+
+    console.warn(
+      `${empName} is underage with age of ${age}. Employee must be 18+`
+    );
+    return;
+  } else if (age > 60) {
+    // age must be 60 or less
+    console.warn(
+      `${empName} is overage with age of ${age}. Employee must be 60-`
+    );
+    return;
+  } else if (!Boolean(gender)) {
+    console.warn(`Please enter a valid gender (m or f)`);
+    return;
+  } else if (
+    gender.length > 0 &&
+    gender.toLowerCase() !== "m" &&
+    gender.toLowerCase() !== "f"
+  ) {
+    console.warn(`Please enter a valid gender (m or f) --2`);
+    return;
+  }
+
+  console.log(
+    `${empName} with age of ${age}, gender is ${gender}. This employee is married ${isMarried}`
+  );
+
+  if (isMarried == true) {
+    // if married, eligible for insurance
+    console.log(`${empName} is eligible for insurance`);
+  } else if (isMarried == false && gender.toLowerCase() == "m" && age > 30) {
+    // if unmarried, male and age > 30, eligible for insurance
+    console.log(`${empName} is eligible for insurance`);
+  } else if (isMarried == false && gender.toLowerCase() == "f" && age > 25) {
+    // if unmarried, female and age > 25, eligible for insurance
+    console.log(`${empName} is eligible for insurance`);
+  } else {
+    // if none of the above conditions are met, not eligible for insurance
+    console.log(`${empName} is NOT eligible for insurance`);
+  }
+};
+```
 
 # ternary operator
 
-# switch case
+- The ternary operator is a shorthand way to write an `if-else` statement in JavaScript.
+- It takes three operands: a condition, a value if the condition is true, and a value if the condition is false.
+- The syntax is as follows:
 
-# break and continue statement
+```javascript
+condition ? valueIfTrue : valueIfFalse;
+
+// condition ? true case : false case
+num % 2 == 0
+  ? console.log("This is a even number")
+  : console.log("This is a odd number");
+```
+
+## complex decision making using ternary operator
+
+- If the ages of Sanjay, Vijay and Ajay are input through the keyboard, write a program to determine the youngest of the three.
+
+```js
+const whoIsYoungest = () => {
+  // --- input--
+  // get the ages of Sanjay, Vijay and Ajay from user input
+
+  const Sanjay = Number(prompt("Enter Sanjay's Age"));
+  const Vijay = Number(prompt("Enter Vijay's Age"));
+  const Ajay = Number(prompt("Enter Ajay's Age"));
+  console.log(
+    `Age of Sanjay- ${Sanjay}, Age of Vijay ${Vijay} and age of Ajay ${Ajay}`
+  );
+
+  // -- validation--
+  // check if the ages are valid numbers
+  if (isNaN(Sanjay) || isNaN(Vijay) || isNaN(Ajay)) {
+    console.warn(
+      `Please enter valid age of ${
+        isNaN(Sanjay) ? "Sanjay" : isNaN(Vijay) ? "Vijay" : "Ajay"
+      }`
+    );
+    return;
+  }
+
+  // --- if-else statement---
+  // if (Sanjay < Vijay && Sanjay < Ajay) {
+  //   console.log("Sanjay is Youngest -- if-else");
+  // } else if (Vijay < Sanjay && Vijay < Ajay) {
+  //   console.log("Vijay is Youngest -- if-else");
+  // } else {
+  //   console.log("Ajay is Youngest -- if-else");
+  // }
+
+  // --- ternary operator---
+  Sanjay < Vijay && Sanjay < Ajay
+    ? console.log("Sanjay is Youngest")
+    : Vijay < Sanjay && Vijay < Ajay
+    ? console.log("Vijay is Youngest")
+    : console.log("Ajay is Youngest");
+};
+```
+
+---
+
+## Switch Case in JavaScript
+
+The `switch` statement is used to perform different actions based on different conditions. It is an alternative to using multiple `if-else` statements when you need to compare a single value against multiple possible cases.
+
+### Syntax:
+
+```javascript
+switch (expression) {
+  case value1:
+    // Code to execute if expression === value1
+    break;
+  case value2:
+    // Code to execute if expression === value2
+    break;
+  default:
+  // Code to execute if no case matches
+}
+```
+
+### Key Points:
+
+1. The `switch` statement evaluates an expression and matches its value against the `case` values.
+2. The `break` statement prevents the execution from falling through to the next case.
+3. The `default` case is optional and executes if no other case matches.
+
+### Example:
+
+```javascript
+const day = 3;
+
+switch (day) {
+  case 1:
+    console.log("Monday");
+    break;
+  case 2:
+    console.log("Tuesday");
+    break;
+  case 3:
+    console.log("Wednesday");
+    break;
+  case 4:
+    console.log("Thursday");
+    break;
+  case 5:
+    console.log("Friday");
+    break;
+  case 6:
+    console.log("Saturday");
+    break;
+  case 7:
+    console.log("Sunday");
+    break;
+  default:
+    console.log("Invalid day");
+}
+```
+
+### Output:
+
+```
+Wednesday
+```
+
+### When to Use `switch`:
+
+- Use `switch` when you need to compare a single value against multiple possible outcomes.
+- It is particularly useful when there are many conditions, as it improves readability compared to multiple `if-else` statements.
+
+### Example with Multiple Cases:
+
+```javascript
+const fruit = "apple";
+
+switch (fruit) {
+  case "apple":
+  case "banana":
+  case "cherry":
+    console.log("This is a fruit.");
+    break;
+  default:
+    console.log("Unknown item.");
+}
+```
+
+### Output:
+
+```
+This is a fruit.
+```
+
+By using `switch`, you can simplify complex decision-making logic and make your code more readable.
+
+## other example of switch case
+
+```javascript
+// ---------- Switch Case --------------
+const dayName = "fri";
+
+// Finding day with if-else
+if (dayName == "sun") {
+  console.log(" this is Sunday");
+} else if (dayName == "mon") {
+  console.log(" this is Monday");
+} else if (dayName == "tues") {
+  console.log(" this is Tuesday");
+} else if (dayName == "wed") {
+  console.log(" this is Wednesday");
+} else if (dayName == "thur") {
+  console.log(" this is Thursday");
+} else if (dayName == "fri") {
+  console.log(" this is Friday");
+} else if (dayName == "sat") {
+  console.log(" this is Saturday");
+} else {
+  console.log("No day has been matched");
+}
+
+// Finding day with switch case
+switch (dayName) {
+  case "sun":
+    console.log(" this is Switch Sunday");
+    break;
+  case "mon":
+    console.log("This is Switch Monday");
+    break;
+  case "tues":
+    console.log("This is Switch Tuesday");
+    break;
+  case "wed":
+    console.log("This is Switch Wednesday");
+    break;
+  case "thurs":
+    console.log("This is Switch Thursday");
+    break;
+  case "fri":
+    console.log("This is Switch Friday");
+    break;
+  case "sat":
+    console.log("This is Switch Saturday");
+    break;
+  default:
+    console.log("No day has been matched");
+    break;
+}
+```
 
 # for loop
 

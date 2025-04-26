@@ -272,23 +272,18 @@ switch (dayName) {
   case "mon":
     console.log("This is Switch Monday");
     break;
-
   case "tues":
     console.log("This is Switch Tuesday");
     break;
-
   case "wed":
     console.log("This is Switch Wednesday");
     break;
-
   case "thurs":
     console.log("This is Switch Thursday");
     break;
-
   case "fri":
     console.log("This is Switch Friday");
     break;
-
   case "sat":
     console.log("This is Switch Saturday");
     break;
