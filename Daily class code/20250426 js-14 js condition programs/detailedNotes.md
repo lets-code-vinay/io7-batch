@@ -879,7 +879,7 @@ Decision making in JavaScript involves executing different blocks of code based 
 
 ### Flow Chart for Decision Making:
 
-![Flowchart Example: Calculate Profit and Loss](./flowchart-example-calculate-profit-and-loss.webp)
+![Flowchart Example: Calculate Profit and Loss](../../flowchart-example-calculate-profit-and-loss.webp)
 
 ### Example:
 
