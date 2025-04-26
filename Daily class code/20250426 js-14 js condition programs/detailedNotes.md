@@ -879,21 +879,19 @@ Decision making in JavaScript involves executing different blocks of code based 
 
 ### Flow Chart for Decision Making:
 
-```plaintext
-Start
-  |
-  v
-Condition? (true/false)
-  |       \
-  v        \
-Code Block 1 (if true)  Code Block 2 (if false)
-  |                     |
-  v                     v
-Continue Execution
-  |
-  v
-End
+````markdown
+```mermaid
+flowchart TD
+  Start --> Condition{"Condition? (true/false)"}
+  Condition -->|true| CodeBlock1["Code Block 1 (if true)"]
+  Condition -->|false| CodeBlock2["Code Block 2 (if false)"]
+  CodeBlock1 --> ContinueExecution["Continue Execution"]
+  CodeBlock2 --> ContinueExecution
+  ContinueExecution --> End
 ```
+````
+
+````
 
 ### Example:
 
@@ -905,7 +903,7 @@ if (age >= 18) {
 } else {
   console.log("You are not eligible to vote.");
 }
-```
+````
 
 This example checks if the `age` is 18 or above and prints a message accordingly.
 
