@@ -4,11 +4,133 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>20250426 js-14 js condition programs</title>
+
+    <style>
+      .zodiac-container {
+        background-image: url("https://img.freepik.com/premium-photo/cosmic-celestial-zodiac-background_548644-2828.jpg?w=740");
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      legend {
+        color: thistle;
+        font-size: 30px;
+        font-weight: bold;
+      }
+
+      .input-container {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        margin-bottom: 20px;
+        color: thistle;
+      }
+      input {
+        font-size: 12px;
+        background-color: #71538736;
+        border-radius: 5px;
+        height: 30px;
+        font-size: 16px;
+        color: aqua;
+      }
+
+      .zodiac-btn {
+        background-color: #4b0082;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 16px;
+        margin: auto;
+      }
+      #zodiac-is {
+        width: 200px;
+        height: 210px;
+      }
+
+      #error {
+        color: red;
+        font-size: 16px;
+        font-weight: bold;
+        margin-top: 10px;
+      }
+      .zodiac-img {
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        margin-top: 10px;
+      }
+    </style>
   </head>
 
-  <body>
-    <h1>20250426 js-14 js condition programs</h1>
+  <body style="background-color: #080000; font-family: Arial, sans-serif">
+    <!-- uncomment if you need-->
+    <!-- <div>
+      <fieldset>
+        <legend>Steel testing</legend>
+        <div>
+          <label for="hardness">Hardness (0-100)</label>
+          <input
+            type="number"
+            id="hardness"
+            placeholder="Please enter hardness of Steel (0-100)"
+          />
+        </div>
 
+        <div>
+          <label for="carbon">Carbon %age (0.0-2.0)</label>
+          <input
+            type="number"
+            id="carbon"
+            placeholder="Please enter carbon %age of Steel (0.0-2.0)"
+          />
+        </div>
+
+        <div>
+          <label for="tensile">Tensile Strength (5000-6000)</label>
+          <input
+            type="number"
+            id="tensile"
+            placeholder="Please enter Tensile of Steel (5000-6000)"
+          />
+        </div>
+
+        <button id="checkSteel">Check Steel</button>
+        <h1 style="color: red" id="output"></h1>
+      </fieldset>
+    </div> -->
+
+    <div class="zodiac-container">
+      <fieldset id="fieldset">
+        <legend>Check Zodiac Sign</legend>
+        <div class="input-container">
+          <label for="month">Enter your Month of Birth (e.g. feb, jun)</label>
+          <input
+            type="text"
+            id="month"
+            placeholder="Enter your Month of Birth"
+          />
+        </div>
+
+        <div class="input-container">
+          <label for="day">Enter your date of Birth (e.g. 1, 15)</label>
+          <input type="text" id="day" placeholder="Enter your Date of Birth" />
+        </div>
+
+        <div class="input-container">
+          <button class="zodiac-btn" id="checkZodiac">Check Zodiac Sign</button>
+          <h6 id="error"></h6>
+        </div>
+        <h1 style="color: red" id="output" class="output"></h1>
+        <div id="zodiac-is"></div>
+      </fieldset>
+    </div>
     <script src="./script.js"></script>
   </body>
 </html>
