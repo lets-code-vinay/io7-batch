@@ -17,7 +17,7 @@ Write a function to print your name and hobbies.
 
 ### Description:
 
-Write a function to enter your favorite avenger and concatenate it with a string.
+Write a function to enter your favorite avenger name and concatenate it with a string.
 
 ### Formula:
 
@@ -46,6 +46,8 @@ Enter 10 numbers and calculate their average.
 ### Formula:
 
 `Average = Sum of numbers / 10`
+
+### Example: 1+2+3+4+5+6+7+8+9+10 = 55 / 10 = 5.5
 
 ---
 
@@ -149,6 +151,7 @@ Calculate the area and perimeter of a rectangle and the area and circumference o
 - `Perimeter of Rectangle = 2 * (length + breadth)`
 - `Area of Circle = π * radius^2`
 - `Circumference of Circle = 2 * π * radius`
+- `π = 3.14` or `Math.PI`
 
 ---
 
@@ -173,6 +176,10 @@ Calculate the sum of the digits of a five-digit number.
 ### Formula:
 
 `Sum = d1 + d2 + d3 + d4 + d5`
+
+### Example: 12345 = 1 + 2 + 3 + 4 + 5 = 15
+
+### Example: 54321 = 5 + 4 + 3 + 2 + 1 = 15
 
 ---
 
@@ -219,6 +226,12 @@ Find all Armstrong numbers between 1 and 500.
 Calculate the area of a triangle using Heron's formula.
 
 ### Formula:
+
+Where `a`, `b`, and `c` are the lengths of the sides of the triangle.
+
+`s is half the perimeter, or (a + b + c)/2`
+
+- `s = (a + b + c) / 2`
 
 `Area = √(s * (s - a) * (s - b) * (s - c))`
 
@@ -318,6 +331,7 @@ Check if the area of a rectangle is greater than its perimeter.
 
 - `Area = length * breadth`
 - `Perimeter = 2 * (length + breadth)`
+- `Area > Perimeter`
 
 ---
 
