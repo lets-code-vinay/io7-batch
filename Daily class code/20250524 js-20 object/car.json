@@ -1,0 +1,15 @@
+{
+  "name": "Audi",
+  "model": "A4",
+  "year": 2023,
+  "color": "black",
+  "price": 5000000,
+  "isElectric": true,
+  "features": {
+    "sunroof": true,
+    "navigation": true,
+    "bluetooth": true,
+    "airbags": 6
+  },
+  "owners": ["John", "Maria", "Chandni"]
+}
