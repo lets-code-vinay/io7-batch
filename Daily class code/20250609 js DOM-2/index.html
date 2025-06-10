@@ -12,13 +12,25 @@
       <h3 class="abc" id="sub-title">Enter your login credentials</h3>
       <div>
         <form action="" id="login-form">
-          <label for="first"> Username: </label>
+          <label for="username"> Username: </label>
           <input
             type="text"
-            id="first"
-            name="first"
+            id="username"
+            name="username"
             placeholder="Enter your Username"
           />
+          <p
+            id="username-error"
+            style="
+              color: red;
+              font-size: 12px;
+              text-align: left;
+              margin-top: -5px;
+              display: none;
+            "
+          >
+            Error:
+          </p>
 
           <label for="password"> Password: </label>
           <input
@@ -28,11 +40,22 @@
             placeholder="Enter your Password"
             class="abc"
           />
+          <p
+            id="pw-error"
+            style="
+              color: red;
+              font-size: 12px;
+              text-align: left;
+              margin-top: -5px;
+              display: none;
+            "
+          >
+            Error:
+          </p>
 
           <div class="wrap">
             <button type="button" id="submit-btn" class="abc">Submit</button>
             <button type="button" id="theme-btn" class="theme">Theme</button>
-            <button type="button" id="test-btn" class="theme">Test</button>
           </div>
         </form>
       </div>
