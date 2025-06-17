@@ -60,7 +60,7 @@
         </div>
 
         <!-- Services Screen-->
-        <div class="services-screen btn-container main-section">
+        <div class="services-screen display-none btn-container main-section">
           <h1 class="welcome-msg"></h1>
 
           <div class="user-service">
@@ -165,6 +165,97 @@
               id="exit"
               onclick="handleExitBtn()"
             >
+              Exit
+            </button>
+          </div>
+        </div>
+
+        <!-- ---- change pin section--- -->
+        <div class="pin-section display-none">
+          <span class="bank-name">Change Pin</span>
+          <div class="check-pin">
+            <input
+              type="number"
+              maxlength="4"
+              minlength="4"
+              value=""
+              class="pin old-pin"
+              id="old-pin"
+              placeholder="Enter old pin"
+            />
+            <button id="match-old-pin" onclick="matchPins()">Match Pin</button>
+          </div>
+          <input
+            type="number"
+            maxlength="4"
+            minlength="4"
+            value=""
+            class="pin new-pin display-none"
+            id="new-pin"
+            placeholder="Enter new pin"
+          />
+          <div class="pin-btn-container">
+            <input
+              type="submit"
+              value="Change Pin"
+              class="pin-btn"
+              id="change-pin-btn"
+              onclick="changePins()"
+            />
+            <input
+              type="submit"
+              value="Back"
+              class="pin-btn"
+              id="got-main-menu-btn"
+              onclick="goToServicesScreen()"
+            />
+            <button
+              class="btn exit pin-btn"
+              id="exit"
+              onclick="handleExitBtn()"
+            >
+              Exit
+            </button>
+          </div>
+        </div>
+
+        <!-- ---- transfer section--- -->
+        <div class="transfer-section display-none">
+          <span class="bank-name">Transfer</span>
+
+          <div>
+            <input
+              type="number"
+              value=""
+              class="pin payee-account"
+              id="payee-account"
+              placeholder="Enter Payee Account number"
+            />
+
+            <input
+              type="number"
+              value=""
+              class="pin transfer-amount"
+              id="transfer-amount"
+              placeholder="Enter Amount to transfer"
+            />
+          </div>
+          <div class="d-flex">
+            <input
+              type="submit"
+              value="Transfer"
+              class="pin-btn"
+              id="got-main-menu-btn"
+              onclick="transfer()"
+            />
+            <input
+              type="submit"
+              value="Back"
+              class="pin-btn"
+              id="got-main-menu-btn"
+              onclick="goToServicesScreen()"
+            />
+            <button class="pin-btn exit" id="exit" onclick="handleExitBtn()">
               Exit
             </button>
           </div>
