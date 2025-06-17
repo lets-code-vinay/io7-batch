@@ -102,6 +102,16 @@
   color: rgb(222, 222, 194);
 }
 
+.balance-enq-screen {
+  width: 50%;
+  border: 1px solid black;
+  /* margin: auto; */
+  height: 600px;
+  background: #f5e4e459;
+  border-radius: 10px;
+  margin: 23px auto;
+}
+
 .pin-section {
   height: 200px;
   border: 1px solid white;

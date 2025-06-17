@@ -21,7 +21,7 @@
       </header>
       <!--Error messages-->
       <div class="error-message display-none"></div>
-      <div class="success-message display-none">this is success mesg</div>
+      <div class="success-message display-none">this is success msg</div>
 
       <main>
         <div class="welcome-screen display-block">
@@ -59,19 +59,12 @@
           </div>
         </div>
 
+        <!-- Services Screen-->
         <div class="services-screen btn-container main-section">
           <h1 class="welcome-msg"></h1>
 
-          <div
-            class="user-service"
-            style="
-              display: flex;
-              justify-content: space-between;
-              align-items: center;
-              gap: 10px;
-            "
-          >
-            <div class="service" style="width: 50%; border: 1px solid black">
+          <div class="user-service">
+            <div class="service" style="border: 1px solid black">
               <h1 class="title">Please select a service</h1>
               <button class="btn" id="withdraw" onclick="handleWithdraw()">
                 Withdraw
@@ -92,10 +85,88 @@
                 Exit
               </button>
             </div>
+          </div>
+        </div>
 
-            <div class="response" style="width: 50%; border: 1px solid black">
-              <h1 class="service-response"></h1>
-            </div>
+        <!-- Balance Enq Screen-->
+        <div class="balance-enq-screen display-none">
+          <h1 class="balance-enq"></h1>
+          <button class="pin-btn" onclick="handleExitBalEnq()">Exit</button>
+        </div>
+
+        <!-- ---- deposit section--- -->
+        <div class="deposit-section display-none">
+          <span class="bank-name">Deposit</span>
+
+          <input
+            type="number"
+            value=""
+            class="pin deposit-amount"
+            id="deposit-amount"
+            placeholder="Enter your amount"
+          />
+
+          <div class="deposit-btn-section">
+            <input
+              type="submit"
+              value="deposit"
+              class="deposit-btn"
+              id="deposit-btn"
+              onclick="deposit()"
+            />
+
+            <input
+              type="submit"
+              value="Back"
+              class="pin-btn"
+              id="got-main-menu-btn"
+              onclick="goToServicesScreen()"
+            />
+            <button
+              class="withdraw-btn exit"
+              id="exit"
+              onclick="handleExitBtn()"
+            >
+              Exit
+            </button>
+          </div>
+        </div>
+
+        <!-- ---- Withdraw section--- -->
+        <div class="withdraw-section display-none">
+          <span class="bank-name">Withdraw</span>
+
+          <input
+            type="number"
+            value=""
+            class="pin wd-amount"
+            id="wd-amount"
+            placeholder="Enter your amount"
+          />
+
+          <div class="withdraw-btn-section">
+            <input
+              type="submit"
+              value="Withdraw"
+              class="withdraw-btn"
+              id="withdraw-btn"
+              onclick="withdraw()"
+            />
+
+            <input
+              type="submit"
+              value="Back"
+              class="pin-btn"
+              id="got-main-menu-btn"
+              onclick="goToServicesScreen()"
+            />
+            <button
+              class="withdraw-btn exit"
+              id="exit"
+              onclick="handleExitBtn()"
+            >
+              Exit
+            </button>
           </div>
         </div>
       </main>
