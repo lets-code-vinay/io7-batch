@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>HTML Login Form</title>
+    <style>
+      /*style.css*/
+      body {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family: sans-serif;
+        line-height: 1.5;
+        min-height: 100vh;
+        background: #f3f3f3;
+        flex-direction: column;
+        margin: 0;
+      }
+
+      .d-block {
+        display: block !important;
+      }
+
+      .d-none {
+        display: none !important;
+      }
+
+      .main {
+        background-color: #fff;
+        border-radius: 15px;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+        padding: 10px 20px;
+        transition: transform 0.2s;
+        width: 500px;
+        text-align: center;
+      }
+
+      h1 {
+        color: #4caf50;
+      }
+      /* 
+.abc {
+  background-color: red;
+  color: blue;
+}
+
+#unique {
+  background-color: yellow;
+  color: black;
+} */
+
+      label {
+        display: block;
+        width: 100%;
+        margin-top: 10px;
+        margin-bottom: 5px;
+        text-align: left;
+        color: #555;
+        font-weight: bold;
+      }
+
+      input {
+        display: block;
+        width: 100%;
+        margin-bottom: 15px;
+        padding: 10px;
+        box-sizing: border-box;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+      }
+
+      button {
+        padding: 15px;
+        border-radius: 10px;
+        margin-top: 15px;
+        margin-bottom: 15px;
+        border: none;
+        color: white;
+        cursor: pointer;
+        background-color: #4caf50;
+        width: 100%;
+        font-size: 16px;
+      }
+
+      .wrap {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+      }
+
+      .theme {
+        background-color: #4c5caf;
+      }
+    </style>
+  </head>
+
+  <body id="main-body">
+    <header
+      class="d-none header-class"
+      style="
+        width: 100%;
+        background: #4caf50;
+        color: #fff;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 15px 40px;
+        box-sizing: border-box;
+        margin-bottom: 30px;
+        border-radius: 0 0 15px 15px;
+      "
+    >
+      <div style="display: flex; align-items: center; gap: 15px">
+        <img
+          src="https://dummyimage.com/40x40/ffffff/4caf50&text=L"
+          alt="Logo"
+          style="
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background: #fff;
+          "
+        />
+        <span style="font-size: 1.5em; font-weight: bold">MyApp</span>
+      </div>
+
+      <div style="display: flex; flex-direction: row; align-items: flex-end">
+        <div style="font-size: 1.1em">
+          User: <strong id="user-name"></strong>
+        </div>
+        <span style="font-size: 0.95em"
+          >Login time: <span id="login-time"></span
+        ></span>
+      </div>
+      <button
+        type="button"
+        id="theme-btn"
+        class="theme"
+        style="width: 200px"
+        onclick="handleClear()"
+      >
+        Logout
+      </button>
+    </header>
+    <script>
+      document.getElementById("login-time").textContent =
+        new Date().toLocaleString();
+    </script>
+
+    <div class="main d-block" id="main-container">
+      <h1 class="abc" id="title-1">Infoxygen</h1>
+
+      <h3 class="abc" id="sub-title">Enter your login credentials</h3>
+      <div>
+        <form action="" id="login-form">
+          <label for="username"> Username: </label>
+          <input
+            type="text"
+            id="username"
+            name="username"
+            placeholder="Enter your Username"
+          />
+          <p
+            id="username-error"
+            style="
+              color: red;
+              font-size: 12px;
+              text-align: left;
+              margin-top: -5px;
+              display: none;
+            "
+          >
+            Error:
+          </p>
+
+          <label for="password"> Password: </label>
+          <input
+            type="password"
+            id="password"
+            name="password"
+            placeholder="Enter your Password"
+            class="abc"
+          />
+          <p
+            id="pw-error"
+            style="
+              color: red;
+              font-size: 12px;
+              text-align: left;
+              margin-top: -5px;
+              display: none;
+            "
+          >
+            Error:
+          </p>
+
+          <div class="wrap">
+            <button
+              type="button"
+              id="submit-btn"
+              class="abc"
+              onclick="handleSubmit()"
+            >
+              Submit
+            </button>
+            <button
+              type="button"
+              id="theme-btn"
+              class="theme"
+              onclick="handleClear()"
+            >
+              clear
+            </button>
+          </div>
+        </form>
+      </div>
+      <p>
+        Not registered?
+        <a href="#" style="text-decoration: none"> Create an account </a>
+      </p>
+    </div>
+
+    <script src="./storage.js"></script>
+  </body>
+</html>
