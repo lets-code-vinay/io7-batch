@@ -326,3 +326,7 @@ const thirdMethod = async () => {
   console.log("response--3--", response);
 };
 ```
+
+## dummy api for testing and development
+
+`https://dummyjson.com/docs`
